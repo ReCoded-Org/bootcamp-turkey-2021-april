@@ -1,9 +1,4 @@
 ## Pesudo code
 
-step 1 : blka bla
-step 1 : blka bla step 1 : blka bla step 1 : blka bla
-step 1 : blka bla
-step 1 : blka bla
-step 1 : blka bla
-step 1 : blka bla
-step 1 : blka bla
+This shouldn't be written as BLA BLA BLA 
+its importants stuff :=)
