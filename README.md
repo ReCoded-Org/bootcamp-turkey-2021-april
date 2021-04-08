@@ -15,6 +15,6 @@ This is the repository for Turkey April 2021 Re:Coded Bootcamp.
   * ex-pair: class2/ammar-halit/"all your files here"
   * ex-groups: class2/ammar-halit-muhannad/"all your files here"
 * Naming the PR should follow the following naming convention:
-  * ex-individual: class2 => ammar-"activity-name"
-  * ex-pair: class2 => ammar-halit-"activity-name"
-  * ex-groups: class2 => ammar-halit-muhannad-"activity-name"
+  * ex-individual: ammar-"activity-name"
+  * ex-pair: ammar-halit-"activity-name"
+  * ex-groups: ammar-halit-muhannad-"activity-name"
