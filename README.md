@@ -7,7 +7,7 @@ This is the repository for Turkey April 2021 Re:Coded Bootcamp.
 * Moving forward you need to update your local repo before you do a PR so you don't miss anyone's work, you can do so by writing the following command while you are located in the dir of your local repo
 ```
     git remote add upstream https://github.com/ReCoded-Org/bootcamp-turkey-2021-april.git
-    git pull remote main
+    git pull upstream main
 ```
 * Each class will have a folder and you should do the PR the right folder with the right name
 * Naming convention should be clear have the "activity_name" and included in a folder with "your_name"-"your partner_name" like the following:
