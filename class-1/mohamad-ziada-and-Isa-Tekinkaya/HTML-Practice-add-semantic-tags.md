@@ -20,30 +20,30 @@
 
     <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
   </main>
-<section>
+<article>
     <h2>MY WORK</h2>
     <img src="https://www.w3schools.com/w3images/p2.jpg" alt="Image of my work">
         <p>A picture of some coffee beans </p>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tortor augue, gravida ac commodo sit amet, mattis vitae purus. Nunc ac aliquam erat. Quisque placerat nec ligula id maximus. Quisque at felis interdum, bibendum nisi in, iaculis quam. Mauris porta, dui vehicula placerat aliquam, nisi eros placerat mauris, a congue tortor enim quis mi. Quisque eget nulla vel magna vestibulum fermentum at vitae arcu. Morbi ut gravida nibh. Maecenas aliquet massa a consequat pulvinar. Cras egestas scelerisque sollicitudin.</p>
-  </section>
-  <section>
+  </article>
+  <article>
  <h2>MY WORK</h2>
     <img src="https://www.w3schools.com/w3images/p2.jpg" alt="Image of my work">
         <p>A picture of some coffee beans </p>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tortor augue, gravida ac commodo sit amet, mattis vitae purus. Nunc ac aliquam erat. Quisque placerat nec ligula id maximus. Quisque at felis interdum, bibendum nisi in, iaculis quam. Mauris porta, dui vehicula placerat aliquam, nisi eros placerat mauris, a congue tortor enim quis mi. Quisque eget nulla vel magna vestibulum fermentum at vitae arcu. Morbi ut gravida nibh. Maecenas aliquet massa a consequat pulvinar. Cras egestas scelerisque sollicitudin.</p>
-</section>
-<section>
+</article>
+<article>
  <h2>MY WORK</h2>
     <img src="https://www.w3schools.com/w3images/p2.jpg" alt="Image of my work">
         <p>A picture of some coffee beans </p>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tortor augue, gravida ac commodo sit amet, mattis vitae purus. Nunc ac aliquam erat. Quisque placerat nec ligula id maximus. Quisque at felis interdum, bibendum nisi in, iaculis quam. Mauris porta, dui vehicula placerat aliquam, nisi eros placerat mauris, a congue tortor enim quis mi. Quisque eget nulla vel magna vestibulum fermentum at vitae arcu. Morbi ut gravida nibh. Maecenas aliquet massa a consequat pulvinar. Cras egestas scelerisque sollicitudin.</p>
-</section>
-<section>
+</article>
+<article>
  <h2>MY WORK</h2>
     <img src="https://www.w3schools.com/w3images/p2.jpg" alt="Image of my work">
         <p>A picture of some coffee beans </p>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tortor augue, gravida ac commodo sit amet, mattis vitae purus. Nunc ac aliquam erat. Quisque placerat nec ligula id maximus. Quisque at felis interdum, bibendum nisi in, iaculis quam. Mauris porta, dui vehicula placerat aliquam, nisi eros placerat mauris, a congue tortor enim quis mi. Quisque eget nulla vel magna vestibulum fermentum at vitae arcu. Morbi ut gravida nibh. Maecenas aliquet massa a consequat pulvinar. Cras egestas scelerisque sollicitudin.</p>
-</section>
+</article>
 
   <section>
 
