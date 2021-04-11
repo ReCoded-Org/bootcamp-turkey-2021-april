@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About me</title>
+</head>
+<body>
+    <!-- This looks like a header -->
+  <h1> Who am I ? </h1>
+    <!-- This looks like normal sentences -->
+  <p>I am a software engineer.</p>
+    <p>My favorites drinks are : <br>
+    <!-- This looks like a list  -->
+   <ul>
+     <li>Coffe</li>
+    <li>Tea</li>
+    <li>Pepsi</li>
+  </ul> </p>
+    <!-- This looks like a list of instructions or events -->
+   <p> My daily routin is: <br>
+    <ol>
+      <li> I wake up at 7:00 Am. </li>
+    <li> I go to work at 8:00.</li>
+   <li> I start working from 8:00 to 1:00 PM </li>
+    <li> I take my breake for an hour.</li>
+    <li> I go back at 2:00 to finish working, and I leave at 4:15.</li>
+      </ol>
+  </p>
+    <!-- This is like a sentence but opening the image in amother tap is annoying -->
+   <p>  I love motorcycle here is a picture of a cool picke <br> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Norton_Motorcycle.jpg/1024px-Norton_Motorcycle.jpg" width=25%> </p>
+    <!-- Would ove to clikc on the work link and go to the page -->
+<p> I also have a github account  <a href="https://github.com/MuhannedNoman">here is the link</a> </P>
+    <!-- This looks like a mess wish there was a wya to display this like a real code -->
+   <p> The last code I wrote today was : 
+    <xmp> public void requestAccess(){
+        // Here, thisActivity is the current activity
+        if (ContextCompat.checkSelfPermission(MainActivity.this,
+                Manifest.permission.READ_EXTERNAL_STORAGE)
+                != PackageManager.PERMISSION_GRANTED) {
+
+            ActivityCompat.requestPermissions(MainActivity.this,
+                    new String[]{Manifest.permission.READ_EXTERNAL_STORAGE},
+                    1);
+
+            // Permission is not granted
+        } else {
+            showFilePicker();
+            // Permission has already been granted
+        }
+    }
+     </xmp> </p>
+</body>
+</html>

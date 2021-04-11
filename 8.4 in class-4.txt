@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello World</title>
+  </head>
+<body>
+
+<p><a href="#c20">Jump to Chapter 20</a></p>
+<p><a href="#c5">Jump to Chapter 5</a></p>
+  
+ ---------------------------------------
+
+<h2>Chapter 1</h2>
+<!-- This should start at 30 and increase by 10, while never going below zero -->
+<form>
+  Quantity:
+  <input type="number" step="10" min="30" >
+</form>
+
+
+
+  
+<h2>Chapter 2</h2>
+<p class="tooltip">This chapter explains ba bla bla</p>
+
+<h2>Chapter 3</h2>
+<!-- The word explain should be small   -->
+  <p>This chapter <span> <small>explains </small> </span> ba bla bla</p>
+
+<h2>Chapter 4</h2>
+<!-- The word chapter should be deleted -->
+  <p>This <span> <del>chapter </del></span> explains ba bla bla</p>
+
+<h2 id="c5">Chapter 5</h2>
+  <!--  video should have it's full aspects width and height. starts at 5 second. allow fullscreen -->
+<iframe id="video1" width="100%" src="https://www.youtube.com/embed/D_VvcNBGy78?start=5"  allow="fullscreen;
+accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"; 
+getCurTime(5);
+      
+></iframe>
+
+
+  
+<h2>Chapter 6</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 7</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 8</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 9</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 10</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 11</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 12</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 13</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 14</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 15</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 16</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 17</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 18</h2>
+<!-- Those two should br radiou buttons. with your gender selected  -->
+<form>
+  <input type="radio" id="male" name="gender" value="male"> Male<br>
+  <input type="radio" id="female" name="gender" value="female" checked="checked"> Female<br>
+</form>
+
+<h2>Chapter 19</h2>
+<p>This chapter explains ba bla bla</p>
+
+
+<h2 id="c20">Chapter 20</h2>
+  <!--  When this is clicked an email prompet should be displayed -->
+<p>
+This is an email link:
+<a  
+   href="mailto:buse.senturk@outlook.com"
+   target="_blank">
+Send Mail</a>
+</p>
+
+<h2>Chapter 21</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 22</h2>
+<!--  This should be a date input  -->
+<form>
+  <p>Birthday:</p>
+  <input type="date" id="birthday" name="birthday">
+</form>
+
+<h2>Chapter 23</h2>
+<!--  This should be a range  -->
+<form>
+  Points:
+  <input type="range"  min="0" max="10">
+</form>
+
+</body>
+</html>
