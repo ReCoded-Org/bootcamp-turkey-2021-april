@@ -1,5 +1,4 @@
 Boiling the water:
-
 Go to the kitchen 
 Open the kitchen cupboard
 Check if we have a pot
@@ -18,7 +17,7 @@ Turn off the heater
 Put the pot down form the heater
 Use the water!
 }
-If we don’t have a pot {
+If we don't have a pot {
 Go to the market
 Open the door of the market
 Choose a pot
@@ -26,10 +25,7 @@ Buy it
 Go back to home 
 Return to the line number 1 
 }
-
-
 Pseudocode to print all numbers from 1 to 100:
-
 Define a variable i
 Give a value for the variable = 1 
 Writing a for loop
@@ -38,10 +34,7 @@ Increase i by one
 If the i value is less or equal to 100 
 Go back to line 4
 If Else break
-
-
 Pseudocode to print even numbers less than or equal to user input, that we call N (inclusive):
-
 Request a number from the user 
 Set the value in a variable j
 Define a variable i
@@ -58,4 +51,3 @@ Increase i by 2
 Check if i equal to j-1
 Break 
 If else back to line 13
-
