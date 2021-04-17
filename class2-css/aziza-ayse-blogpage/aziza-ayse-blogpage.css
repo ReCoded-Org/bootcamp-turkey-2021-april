@@ -1,0 +1,146 @@
+/* Start of Codding-Sidebar text design*/
+ #slogan{
+   color: #7e9db4;
+ }
+ #welcome{
+   box-sizing: content-box;
+   width: 200px;
+   padding: 20px;
+   font-family: Helvetica, sans-serif;
+ }
+ li.uppernavigation a{
+   border: 2px solid #7e9db4;
+   color: white;
+   margin: 1px;
+   padding: 5px;
+   font-size: 12px;
+ }
+ .pages{
+   display: inline-flex;
+   margin: 15px;
+   list-style: none;
+ }
+ h2{
+   color: white;
+ }
+ h4{
+   color: rgb(89, 171, 199);
+ }
+ /* End of Codding-Sidebar text design*/
+
+
+ /* Start of Codes-Description&Link text design*/
+ .beg{
+   color:grey;
+   margin-top: 1px;
+   margin-bottom: 2px;
+   font-size: 15px;
+   font-family: 'Open Sans Condensed', sans-serif;
+   letter-spacing: 2px;
+   opacity: 50%;
+ }
+ h3{
+   margin: 0px;
+   font-size: 25px;
+ }
+ .link{
+   margin: 0;
+   font-size: 12px;
+ }
+ p {
+   color: rgb(136, 133, 133);
+   line-height: 20px;
+ }
+ a{
+   color: rgba(6, 168, 218, 0.925);
+   text-decoration: none !important
+ }
+ /* End of Code Description&Link text design*/
+
+
+ /* Start of Code - Icon*/
+ .icon{
+   width: 40px;
+   margin: 0px;
+ }
+ #description{
+ display: flex;
+ 	flex-direction: row;
+ 	justify-content: space-between;
+ 	align-items: center;
+   margin: 0;
+ }
+ /* End of Code - Icon*/
+
+
+ /* Start of Code - Buttons */
+ .javascript1{
+   background: blue;
+   color: white;
+ }
+ .javascript2{
+   background: red;
+   color: white;
+ }
+ .css{
+   background: green;
+   color: white;
+ }
+ .notvisitedplaces{
+   background: grey;
+   color: white;
+ }
+ /* End of Code - Buttons */
+
+
+ /* Start of Code - Photo */
+ .img1{
+   padding: 2%;
+   height: 15%;
+   width: 45%;
+ }
+ .img2{
+   padding: 2%;
+   height: 15%;
+   width: 45%;
+ }
+ /* End of Code - Photo */
+
+
+ /* Start of Code - footer */
+ .end a{
+   text-decoration: none;
+   color: #999595d0;
+   padding: 0 10px;
+ }
+ .footer-content {
+ display: flex;
+ 	flex-direction: row;
+ 	justify-content: center;
+   margin-top: 5px;
+ }
+ /* End of Code - footer */
+
+
+ /*Start of Code - Main Page */
+ .left {
+ display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   text-align: right;
+   background-color:rgb(61,79,93);
+   width: 45%;
+   padding-right: 20px;
+   padding-top: 200px;
+ }
+ .right {
+   padding: 30px;
+ }
+ body {
+ display: flex;
+ }
+ html {
+   box-sizing: border-box;
+   margin: 10px 10% 2em 10%;
+ }
+ /*End of Code - Main Page */

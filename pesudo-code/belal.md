@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ## Pesudo code
 
 This shouldn't be written as BLA BLA BLA 
@@ -40,5 +39,3 @@ else {
         return "S grade"
     }
 }
-=======
->>>>>>> b5388e85f754643237e838c9a047e3c66f50f5ee
