@@ -1,4 +1,5 @@
-// 1
+
+//1
 
 function compareNumbers(num){
 if (num > 10 && num < 20){
@@ -19,7 +20,8 @@ else {
 }
 }
 
-// 2
+//2
+
 function stringNumber(num,string){
  let len = string.length;
  if(len<num){
@@ -42,7 +44,7 @@ console.log(stringOne)
 console.log(stringTwo)
 console.log(stringThree)
 
-// 3
+//3
 
 function myColors(color) {
   switch (color) {
