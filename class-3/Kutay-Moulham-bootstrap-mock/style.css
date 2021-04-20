@@ -1,0 +1,176 @@
+
+body {
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+  margin: 0px;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.firstsec {
+  background-image: url("./img/bg.jpg");
+  /* background: rgba(84, 69, 60, 0.5); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  /* opacity: 0.9;
+  filter: brightness(0.7); */
+  /* position: relative; */
+}
+
+.navBar {
+  display:flex;
+  justify-content: space-between;
+  color: gainsboro;
+  padding-right: 70px;
+
+}
+
+.navBar p {
+  padding-left: 100px;
+}
+
+.navlist {
+  list-style-type: none;
+  display: flex;
+  /* justify-content: space-around; WHY DOESNT IT WORK */
+}
+
+.navlist a {
+  text-decoration: none;
+  padding-right: 10px;
+  color: gainsboro;
+
+}
+
+.introHeader {
+  font-size: 30px;
+  padding: 140px;
+  color: white; 
+}
+
+.firstp {
+color: #cfd0ce;
+}
+
+hr {
+  width:30px;
+  margin:0 auto; /*WHAT DOES THIS DO ?*/
+}
+
+.fomore {
+  background: #f4623a;
+  color: white;
+  border: none;
+  padding: 15px 15px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.secondsec {
+  background-color: #f4623a;
+  padding: 70px 0px 70px 0px;
+}
+
+.gstarted {
+  background: white;
+  border: none;
+  padding: 15px 15px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.thirdsec {
+  padding: 70px 0px 70px 0px;
+}
+
+.logoDivDiv {
+  display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#bigHeart {
+  width: 35px;
+  margin: 10px 0px 10px 0px;
+}
+
+.greyText {
+  color: #6d757d;
+}
+
+.forthsec {
+  /* padding: 0px;
+  display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: stretch;
+	align-content: stretch; */
+}
+
+
+.photoclass {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+.photo {
+  width: 100%;
+}
+
+.fifthsec {
+  background: #343a40;
+  padding: 70px 0px 70px 0px;
+}
+
+.dnow{
+  background: white;
+  color: #343a40;
+  border: none;
+  padding: 15px 15px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.sixthsec {
+  padding: 70px 0px 70px 0px;
+
+}
+
+.icon2, .icon3 {
+  width: 35px;
+  /* margin: 10px 0px 10px 0px; */
+}
+
+.logoDivDiv2 {
+  display: flex;
+  flex-direction: row;/*WE DONT NEED TO ADD THIS I GUESS SINCE FLEX DIRECTION ROW IS THE DEFAULT*/
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.logoDivDiv2 a {
+  text-decoration: none;
+
+}
+
+footer {
+  background: #f8f9fa;
+  padding: 40px 0px 40px 0px;
+}
+
+span {
+  color: #8493ad;
+}
