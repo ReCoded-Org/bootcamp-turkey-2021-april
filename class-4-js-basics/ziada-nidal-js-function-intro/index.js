@@ -21,4 +21,4 @@ function greet (firstName, lastName) {
   return ("Hello " + fullName)
 }
 
-greet ("Mustafa", "ziada")
+greet ("nidal", "ziada")
