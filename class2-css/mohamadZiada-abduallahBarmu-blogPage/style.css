@@ -1,0 +1,163 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+}
+
+
+h2 {
+  margin-top: 300px;
+  color: white;
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.8em;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+
+h4 {
+  margin-top: -20px;
+  color: #b0cadb;
+  font-weight: normal;
+  font-size: 1.3em;
+}
+
+h6 {
+  color: #bbb2b5;
+  font-weight: normal;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+hr {
+  height: 1px;
+  background-color: #ccc;
+  border: none;
+}
+
+a {
+  color: #489ad1;
+  text-decoration: none;
+}
+
+p {
+  color: #3d4f5d;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 50px;
+}
+
+.main {
+    max-width: 70%;
+    padding: 40px;
+}
+
+.aside {
+  background-color: #3d4f5d;
+  max-width: 20%;
+  padding: 30px;
+  text-align: right;
+}
+
+.profile-image {
+  width: 50px;
+  height: 50px;
+  margin-top: -25px;
+}
+
+.top-margin {
+  margin-top: -8px;
+}
+
+.buttonflex {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.nobulletlist {
+  list-style-type: none;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+#flexbox {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+
+.aside-button a {
+  text-decoration: none;
+  border: 2px solid #b0cadb;
+  border-radius: 2px;
+  color: white;
+  padding: 7px 10px 7px 10px;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+
+.javascript-blue {
+  background-color: #4d85d1;
+  border: 0px;
+  color: white;
+  font-size: 12px;
+  padding: 3px 10px 3px 10px;
+}
+
+.javascript-red {
+  background-color: #df2d4f;
+  border: 0px;
+  color: white;
+  font-size: 12px;
+  padding: 3px 10px 3px 10px;
+} 
+
+.css-green {
+  background-color: #5aba59;
+  border: 0px;
+  color: white;
+  font-size: 12px;
+  padding: 3px 10px 3px 10px;
+}
+
+.not-visited-places {
+  background-color: #999999;
+  border: 0px;
+  color: white;
+  font-size: 12px;
+  padding: 3px 10px 3px 10px;
+}
+
+.image-flexbox {
+  display: flex;
+  justify-content: flex-start;
+  flex: 0 1 auto;
+  margin-bottom: 100px;
+}
+
+.image-flexbox-item {
+  max-width: 48%;
+  margin-right: 20px;
+}
+
+
+#footer-flex {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  margin-left: 350px;
+  margin-top: -50px;
+}
+
+.footer-item a {
+  color: #bbb2b5;
+  margin-left: 50px;
+}
