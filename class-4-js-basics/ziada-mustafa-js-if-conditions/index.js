@@ -18,8 +18,6 @@ challenge1 (1)
 
 
 
-
-
  // challenge2
 
 function challenge2 (number,string) {
