@@ -1,0 +1,184 @@
+/*                    The outer box that contain both sidepanel and main blog area.                   */
+#flexBoxArea {
+    display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+  }
+  
+  /*                    All Styling for the Side Panel.                   */
+  #leftFlexBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 25%;
+    margin-right: 20px;
+    text-align: right;
+    padding: 2%;
+    background-color: #3d4f5d;
+  }
+  
+  #sidePanel {
+    display: flex;
+    flex-direction: column;
+    margin-top: 250px;
+  }
+  
+  h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #b0cadb;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 15px;
+  }
+  
+  nav ul li{
+    font-size: inherit;
+    display: inline-block;
+    color: white;
+    margin-left: 15px;
+  }
+  
+  nav a {
+    height: 30px;
+    border: 2px solid #b0cadb;  
+    cursor: pointer;
+    color: white;
+    background: transparent;
+    text-decoration: #b0cadb;
+    padding: 5px;
+  }
+  
+  /*                    All Styling for the main blog page.                   */
+  main {
+    margin-left: 10px;
+    margin-top: 30px;
+    max-width: 75%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main a {
+    color: #75c1ec;
+    text-decoration: #75c1ec; 
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  section {
+    display: block;
+    margin-bottom: 15px;
+  }
+  
+  .articleFlexBox {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h6 {
+    color: #aab2c8;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;       
+    font-family: serif;
+  }
+  
+  h3 {
+    color: #222222;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  p {
+    padding: 0px;
+    color: #515252;
+    line-height: 1.8;
+    margin-bottom: 10px;
+  }
+  
+  #greenCSS {
+    background-color: #5aba59;
+    border: 0px;
+    color: white;
+    cursor: pointer;
+    padding: 4px 8px;
+  }
+  
+  #blueJS {
+    background-color: #4d85d1;
+    border: 0px;
+    color: white;
+    cursor: pointer;
+    padding: 4px 8px;
+  }
+  
+  #redJS {
+    background-color: #df2d4f;
+    border: 0px;
+    color: white;
+    cursor: pointer;
+    padding: 4px 8px;
+  }
+  
+  #places {
+    background-color: #999999;
+    border: 0px;
+    color: white;
+    cursor: pointer;
+    padding: 4px 8px;
+  }
+  
+  .blogImage {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .imgSpec {
+    width: 48%;
+    margin-right: 1%;
+  }
+  
+  /*                    All Styling for the footer Area.                   */
+  footer {
+    max-width: 75%;
+    display: flex;
+    justify-content: flex-end;         
+    text-align: center;
+    list-style-type: none; 
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  footer li {
+    display: inline-block;
+    text-align: center;
+    margin: 0px 20px;
+  }
+  
+  footer li a {
+    color: #ccd0db;
+    text-decoration: #ccd0db;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  /*
+  NOTES:
+  only the footer area i couldn't figure out how to do it properly :( 
+  */
