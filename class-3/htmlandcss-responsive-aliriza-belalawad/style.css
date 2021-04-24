@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --gray: #ccc;
+    --dark-gray: #343a40;
+    --white: #fff;
+    --black: #000;
+    --orange: #ff4a18;
+}
+
+body {
+    font-family: Lato, sans-serif;
+    font-size: 1.3em;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn {
+    padding: 0.8em 1.3em;
+    border-radius: 3rem;
+}
+
+/* Header Styles */
+
+
+.section-1 header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+header a {
+    color: var(--gray);
+}
+
+.header-nav {
+    display: flex;
+    width: 22.6%;
+}
+
+.header-nav a {
+      margin-left: 5px;
+      margin-right: 5px;
+}
+
+.bootstrap {
+    font-size: 1.5em;
+    /* margin-right: 50%; */
+}
+
+/* Section-1 Styles */
+
+.section-1 {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(img/bg.jpg);
+    opacity: 95%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.introduction {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 92.9vh;
+}
+
+.introduction p {
+    width: 55%;
+    color:  var(--gray);
+}
+
+.introduction h1 {
+    width: 60%;
+    color: var(--white);
+    font-size: 2.5em;
+}
+
+.introduction hr {
+    margin: 1.5% 0;
+    color: var(--orange);
+}
+
+.section-1 .btn {
+    background-color: var(--orange);
+    color: var(--white);
+    margin-top: 3%;
+}
+
+/* Section-2 Styles */
+
+.section-2 {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--orange);
+    text-align: center;
+}
+
+.section-2 hr {
+    color: var(--white);
+    margin: 1.5% 0;
+}
+
+.section-2 .btn {
+    color: var(--black);
+    background-color: var(--white);
+    margin-top: 3%;
+}
+
+.section-2 p {
+    color: var(--gray);
+}
+
+.section-2 h1 {
+    color: var(--white);
+}
+
+/* Section-3 Styles */
+
+.section-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh
+}
+
+.section-3 hr {
+    color: var(--orange);
+    margin-top: 1.5%;
+    margin-bottom: 2.5%;
+}
+
+.section-3 .icon-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 0 1%;
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.icon-wrapper img {
+    height: 60px;
+    width: 100px;
+}
+
+.icon-wrapper img.heart {
+    width: 40px;
+    height: 60px;
+}
+
+.icon-wrapper h2 {
+    margin-bottom: 10px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-item p {
+    width: 90%;
+}
+
+.second-item p {
+    width: 90%;
+}
+
+.third-item p {
+    width: 90%;
+}
+
+/* Section-4 Styles */
+
+.first-flex,
+.second-flex {
+    display: flex;
+}
+
+.first-flex img,
+.second-flex img {
+    flex: 0 1 33.33333%;
+}
+
+.call-to-action {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-gray);
+    height: 40vh;
+}
+
+.call-to-action h1 {
+    /* margin-top: 20px; */
+    color: var(--white);
+}
+
+.call-to-action a {
+    color: var(--dark-gray);
+    background-color: var(--white);
+    margin-top: 3%;
+}
+
+/* Section-5 Styles */
+
+.section-5 {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.section-5 hr {
+    color: var(--orange);
+    margin: 1.5% 0;
+}
+
+.section-5-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.one, .two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.section-5-wrapper img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+}
+
+.two img.mail {
+    height: 60px;
+}
+
+.text-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.text-wrapper p {
+    width: 75%;
+    text-align: center;
+}
+
+.orange {
+    color: var(--orange);
+    cursor: pointer;
+}
+
+/* Footer Styles */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    background-color: var(--gray);
+    font-size: 0.7em;
+    color: var(--dark-gray);
+}
+
