@@ -1,0 +1,272 @@
+Add functionality to the navbar links
+
+
+
+body {
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+  margin: 0px;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.firstsec {
+  background-image: url("./img/bg.jpg");
+  /* background: rgba(84, 69, 60, 0.5); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  /* opacity: 0.9;
+  filter: brightness(0.7); */
+  /* position: relative; */
+}
+
+.navBar {
+  display:flex;
+  justify-content: space-between;
+  color: gainsboro;
+  padding-right: 70px;
+
+}
+
+.navBar p {
+  padding-left: 100px;
+}
+
+.navlist {
+  list-style-type: none;
+  display: flex;
+  /* justify-content: space-around; WHY DOESNT IT WORK */
+}
+
+.navlist a {
+  text-decoration: none;
+  padding-right: 10px;
+  color: gainsboro;
+
+}
+
+.introHeader {
+  font-size: 30px;
+  padding: 140px;
+  color: white; 
+}
+
+.firstp {
+color: #cfd0ce;
+}
+
+hr {
+  width:30px;
+  margin:0 auto; /*WHAT DOES THIS DO ?*/
+}
+
+.fomore {
+  background: #f4623a;
+  color: white;
+  border: none;
+  padding: 15px 15px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.secondsec {
+  background-color: #f4623a;
+  padding: 70px 0px 70px 0px;
+}
+
+.gstarted {
+  background: white;
+  border: none;
+  padding: 15px 15px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.thirdsec {
+  padding: 70px 0px 70px 0px;
+}
+
+.logoDivDiv {
+  display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#bigHeart {
+  width: 35px;
+  margin: 10px 0px 10px 0px;
+}
+
+.greyText {
+  color: #6d757d;
+}
+
+.forthsec {
+  /* padding: 0px;
+  display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: stretch;
+	align-content: stretch; */
+}
+
+
+.photoclass {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+.photo {
+  width: 100%;
+}
+
+.fifthsec {
+  background: #343a40;
+  padding: 70px 0px 70px 0px;
+}
+
+.dnow{
+  background: white;
+  color: #343a40;
+  border: none;
+  padding: 15px 15px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.sixthsec {
+  padding: 70px 0px 70px 0px;
+
+}
+
+.icon2, .icon3 {
+  width: 35px;
+  /* margin: 10px 0px 10px 0px; */
+}
+
+.logoDivDiv2 {
+  display: flex;
+  flex-direction: row;/*WE DONT NEED TO ADD THIS I GUESS SINCE FLEX DIRECTION ROW IS THE DEFAULT*/
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.logoDivDiv2 a {
+  text-decoration: none;
+
+}
+
+footer {
+  background: #f8f9fa;
+  padding: 40px 0px 40px 0px;
+}
+
+span {
+  color: #8493ad;
+}
+
+[class*='col-'] {
+  width: 100%;
+  float: left;
+  /* padding: 0px;
+  margin: 0px; */
+}
+
+.row::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+@media only screen and (min-width: 800px) {
+  /* The mathe behind this 
+  100% / 12 columns = 8.33%. */
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .col-m-1 {
+    width: 8.33%;
+  }
+  .col-m-2 {
+    width: 16.66%;
+  }
+  .col-m-3 {
+    width: 25%;
+  }
+  .col-m-4 {
+    width: 33.33%;
+  }
+  .col-m-5 {
+    width: 41.66%;
+  }
+  .col-m-6 {
+    width: 50%;
+  }
+  .col-m-7 {
+    width: 58.33%;
+  }
+  .col-m-8 {
+    width: 66.66%;
+  }
+  .col-m-9 {
+    width: 75%;
+  }
+  .col-m-10 {
+    width: 83.33%;
+  }
+  .col-m-11 {
+    width: 91.66%;
+  }
+  .col-m-12 {
+    width: 100%;
+  }
+}
