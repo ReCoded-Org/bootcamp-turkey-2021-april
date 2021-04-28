@@ -1,0 +1,61 @@
+button {
+  justify-items: center;
+  justify-content: center;
+  align-self: center;
+  background-color: orange;
+  border: 0;
+  border-radius: 25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 25px;
+  margin-bottom: 5px;
+  font-size: 15px;
+  text-align: center;
+}
+
+li {
+  font-style: italic;
+  font-size: 20px;
+  color: skyblue;
+}
+
+h2 {
+  /* font-family:  */
+  font-size: 30px;
+  font-weight: bolder;
+  font-style: italic;
+  color: skyblue;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  height: 100vh;
+}
+
+p {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 15px;
+}
+
+input {
+  border-radius: 25px;
+  align-self: center;
+  height: 30px;
+}
+
+img {
+  width: 30px;
+  align-content: center;
+  align-self: center;
+  justify-content: center;
+}
+
+.challengeTwo {
+  display: inline-block;
+  align-self: center;
+}
