@@ -11,9 +11,14 @@ document.querySelector(".submitButton").addEventListener('click', (e) => {
    * 
    * You should then add this object to the entries array.
    */
-  entries.firstName = document.querySelector(".firstName").value;
-  entries.lastName = document.querySelector(".lastName").value;
-  entries.bio = document.querySelector(".bio").value;
+  
+  let obj = {
+    firstName: document.querySelector(".firstName").value,
+    lastName: document.querySelector(".lastName").value,
+    bio: document.querySelector(".bio").value,
+  };
+
+  entries.push(obj);
   e.preventDefault();
 
   // This function is called for you. You also have to implement it.
@@ -26,9 +31,19 @@ document.querySelector(".submitButton").addEventListener('click', (e) => {
 // THIS FUNCTION SHOULD NOT USE THE VARIABLE `entries`!
 
 function renderPeople(people) {
+  const outputDiv = document.querySelector('.output');
+  let nameSurnameP = document.createElement('p');
+  let br1 = document.createElement('br'); 
+  let br2 = document.createElement('br'); 
+  let bioP = document.createElement('p');
+
   console.log(people);
-  let peopleP = document.createElement('p');
-  peopleP.textContent = people.firstName + " " + people.lastName + "\n" + people.bio;
-  document.querySelector(".output").append(peopleP);
-  console.log(peopleP.textContent);
+  for(let i = 0; i < people.length; i++){
+    nameSurnameP = people[i].firstName + " " + people[i].lastName;
+    bioP =  people[i].bio;
+    outputDiv.append(nameSurnameP);
+    outputDiv.append(br1);
+    outputDiv.append(bioP);
+    outputDiv.append(br2);
+  }
 }
