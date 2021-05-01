@@ -33,17 +33,13 @@ document.querySelector(".submitButton").addEventListener('click', (e) => {
 function renderPeople(people) {
   const outputDiv = document.querySelector('.output');
   let nameSurnameP = document.createElement('p');
-  let br1 = document.createElement('br'); 
-  let br2 = document.createElement('br'); 
   let bioP = document.createElement('p');
 
-  console.log(people);
+  // console.log(people);     // This was for me for testing purposes.
   for(let i = 0; i < people.length; i++){
-    nameSurnameP = people[i].firstName + " " + people[i].lastName;
-    bioP =  people[i].bio;
+    nameSurnameP.innerText = "Name and Surname: " + people[i].firstName + " " + people[i].lastName;
+    bioP.innerText =  "Bio: " + people[i].bio;
     outputDiv.append(nameSurnameP);
-    outputDiv.append(br1);
     outputDiv.append(bioP);
-    outputDiv.append(br2);
   }
 }
