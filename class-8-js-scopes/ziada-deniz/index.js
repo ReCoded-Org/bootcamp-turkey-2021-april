@@ -3,6 +3,7 @@
 let result;
 function add(a, b) {
    result = a + b;
+   return result
 }
 
 add(2, 4);
