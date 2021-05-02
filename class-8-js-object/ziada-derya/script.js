@@ -1,5 +1,5 @@
 // Entries should be an *array of objects*.
-const entries = [];
+let entries = [];
 
 
 document.querySelector(".submitButton").addEventListener('click', (e) => {
@@ -7,17 +7,13 @@ document.querySelector(".submitButton").addEventListener('click', (e) => {
   const firstName = document.querySelector('.firstName').value
   const lastName = document.querySelector('.lastName').value
   const bio = document.querySelector('.bio').value
+  let object = { 
+    firstName: firstName, 
+    lastName: lastName,
+     bio: bio,
+    }
 
-let object = { 
-  firstName: firstName, 
-  lastName: lastName,
-  bio: bio,
-}
-
-entries.push(object);
-// console.log(objectOnly)
-
-
+  entries.push(object);
   /*
    * When the button is clicked, you should collect the first name,
    * last name, and bio and store them in an object with three keys:
@@ -27,7 +23,6 @@ entries.push(object);
    */
 
   // This function is called for you. You also have to implement it.
-  
   renderPeople(entries);
 });
 
@@ -36,15 +31,20 @@ entries.push(object);
 //
 // THIS FUNCTION SHOULD NOT USE THE VARIABLE `entries`!
 
+
+
 function renderPeople(people) {
-  const objectOnly = entries[0]
-  for (const property in objectOnly) {
-  const render = document.querySelector('.output'); 
-  let newElement = document.createElement("p");
-  console.log(`${property}: ${objectOnly[property]}`);
-  newElement.innerHTML = `${property}: ${objectOnly[property]}`;
-  render.appendChild(newElement);
-} 
+  // console.log(entries)
+  for (let i = 0; i < entries.length; i++) {
+      const render = document.querySelector('.output'); 
+      let newElement = document.createElement("p");
+      console.log(entries);
+      newElement.innerHTML = `<p> First Name: ${entries[i].firstName} </p>
+      <p> Last Name: ${entries[i].lastName} </p>
+      <p>  Bio: ${entries[i].bio} </p>`
+      render.appendChild(newElement);
+    }
+    entries = [];
 }
 
 
