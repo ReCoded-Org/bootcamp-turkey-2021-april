@@ -1,0 +1,12 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.challengeTwo {
+  display: flex;
+  flex-direction: column;
+}
+p {
+  text-align: center;
+}

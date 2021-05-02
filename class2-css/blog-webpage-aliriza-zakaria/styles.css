@@ -1,0 +1,189 @@
+:root {
+    --aside-subheader-color: #b0cadb;
+    --aside-background-color: #3d4f5d;
+    --gray: #aaaaaa;
+    --hr-gray:#eeeeee;
+    --btn-gray: #999999;
+    --btn-green: #5aba59;
+    --btn-blue: #4d85d1;
+    --btn-red: #df2d4f;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 80rem;
+}
+
+h6 {
+    margin-bottom: 0;
+}
+
+p {
+    margin-bottom: 50px;
+}
+
+/* Sidebar styles */
+
+aside {
+    background-color: var(--aside-background-color);
+    /* display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start; */
+    /* position: relative; */
+    width: 30%;
+    padding: 0 10px;
+
+}
+
+
+aside div {
+     /* display: flex; */
+    /*flex-direction: column;
+    align-items: flex-end; */
+    width: 20%;
+    text-align: right;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+}
+
+aside h2 {
+    color: white;
+    margin: 0;
+}
+
+aside h4 {
+    color: var(--aside-subheader-color);
+    margin: 0;
+    text-align: end;
+}
+
+.side-bar-btns {
+    display: flex;
+    list-style-type: none;
+}
+
+.side-bar-btns a {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: var(--btn-blue);
+}
+
+aside a {
+    text-decoration: none;
+    border: 2px solid var(--aside-subheader-color);
+    padding: 4px 6px;
+}
+
+.projects-btn {
+    margin-left: 1rem;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.main{
+    width: 100%;
+    margin-left: 1rem;
+}
+
+hr {
+    color: var(--hr-gray);
+}
+
+.gray-text {
+    color: var(--gray);
+}
+
+/* Button styles */
+
+.btn {
+    border: none;
+    background: none;
+    padding: 3px 6px;
+    color: white;
+}
+
+.gray-btn {
+    background-color: var(--btn-gray);
+}
+
+.green-btn {
+    background-color: var(--btn-green);
+}
+
+.red-btn {
+    background-color: var(--btn-red);
+}
+
+.blue-btn {
+    background-color: var(--btn-blue);
+}
+
+/* Some flexbox */
+
+.header-img {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.header-img h6,
+.header-img h3 {
+    margin: 0;
+    margin-bottom: 5px;
+    /* margin-top: 15px;
+    margin-bottom: 10px; */
+}
+
+.header-img div {
+    height: 45px;
+}
+
+[src="img/old-guy.png"] {
+    width: 62px;
+    height: 62px;
+}
+
+.div-img {
+    display: flex;
+}
+
+.img-1,
+.img-2 {
+    width: 458px;
+}
+
+.img-1 {
+    margin-right: 20px;
+}
+
+/* Footer styles */
+
+footer {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+footer a {
+    color: var(--btn-gray);
+
+}
+
+.twitter-btn {
+    margin: 0 30px;
+}
