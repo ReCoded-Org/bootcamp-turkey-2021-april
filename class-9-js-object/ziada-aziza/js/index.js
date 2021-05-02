@@ -50,7 +50,7 @@ function renderDate(user) {
     list.appendChild(li);
 
 
-    // addEventListener to each h2 to show repositories
+    // addEventListener to each repositories button
     showRepos.addEventListener('click', (e) => {
       fetch(`https://api.github.com/users/${username.innerText}/repos`)
       .then (repos => repos.json())
@@ -79,21 +79,3 @@ function renderDate(user) {
       }
     }
 }
-
-
-
-//     })
-
-
-
-
-
-// function 
-
-
-// 3. Clicking on one of these users should send a request to the
-//    [User Repos Endpoint](#user-repos-endpoint) and return data about all the
-//    repositories for that user.
-// 4. Using the response from the Users Repos Endpoint, display all the
-//    repositories for that user on the page.
-
