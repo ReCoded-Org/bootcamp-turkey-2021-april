@@ -2,22 +2,21 @@
 const entries = [];
 
 document.querySelector(".submitButton").addEventListener('click', (e) => { 
-  e.preventDefault();
+ 
 
   let firstName = document.querySelector(".firstName").value
     let lastName = document.querySelector(".lastName").value
       let bio = document.querySelector(".bio").value
-      //console.log(document.querySelector(".lastName").value);
-      //profile.firstName1 = "firstName"
+      
     
   const profile = {
        firstName : firstName,
        lastName : lastName,
         bio : bio,
        }
-       //console.log(profile);
+       
 entries.push(profile);
-
+e.preventDefault();
   /*
    * When the button is clicked, you should collect the first name,
    * last name, and bio and store them in an object with three keys:
@@ -35,28 +34,16 @@ console.log(entries);
 // to render `people` however you want.
 //
 // THIS FUNCTION SHOULD NOT USE THE VARIABLE `entries`!
-function renderPeople(pro) {
-  let list = document.createElement("li");
-  document.querySelector(".output").appendChild(list);
-  
 
-  
-  //let newList = list.innerText;
-  for(i=0;i <pro.length; i++) {
-    //for (j=0; j< profile[i].length; j++)
-       list.innerHTML += pro[i].firstName + " " + pro[i].lastName + " " + "Bio:" + pro[i].bio;
-       
-       
-    
-    //}
+function renderPeople(pro) { 
+
+  let list = document.createElement('li');
+ 
+  for( i=0;i <pro.length; i++) {
+    list.innerHTML = pro[i].firstName + " " + pro[i].lastName + " " + " " + pro[i].bio;
+     document.querySelector(".output").appendChild(list);
+   
+
   };
-  
-  
-//console.log(document.querySelector(".output").innerText);
+
 }
-
-
-// for(i=0;i<contacts.length;i++){
-//     document.getElementById("mydiv").innerHTML += contacts[i].fname+" "+contacts[i].lname;
-// }
-// }
