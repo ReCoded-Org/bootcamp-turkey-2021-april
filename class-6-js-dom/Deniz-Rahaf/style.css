@@ -1,0 +1,94 @@
+/*insprired by this https://themes.getbootstrap.com/preview/?theme_id=86954
+*/
+body {
+  font-family: serif, Helvetica, sans-serif;
+  background-color: #eee;
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+
+}
+
+.challengeOne{
+  padding: 10px;
+  width:100%;
+  color: #444;
+}
+.parentDiv{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap; 
+  max-width: 990px;
+  margin: auto;
+  gap:30px
+}
+
+.challengeTwo{
+   width:50%;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   background: #fff;
+   padding: 20px;
+   border-radius: 10px;
+}
+.challengeTwo p{
+  font-size: 12px;
+  font-weight: bold;
+  color:#b5b5c3;
+}
+.challengeTwo span{
+  font-size: 78px;
+  color: #008bd9;
+}
+
+.challengeThree{
+  width:50%;
+  display: flex;
+   flex-direction: column;
+   gap: 10px;
+   background: #fff;
+   padding: 20px;
+   border-radius: 10px;
+}
+.challengeThree ul{
+  min-height: 115px;
+  font-weight: bold; 
+  list-style: none;
+   color: #5e6278;
+   text-align: left;
+}
+
+input{
+  border-radius: 5px;
+  padding: 7px;
+  border: 2px solid #008bd9;
+  background-color: #f5f8fa;
+    border-color: #f5f8fa;
+    color: #5e6278;
+}
+.challengeTwo > p{
+  text-align: center
+}
+
+.challengeThree{
+  text-align: center;
+}
+
+button {
+  border-radius: 5px;
+  padding: 10px;
+  background-color:#008bd9;
+  border:none;
+  color:#fff;
+}
+
+@media screen and (max-width: 400px){
+  .challengeThree , .challengeTwo{
+    width: 100%;
+  }
+  .parentDiv {
+    flex-wrap: wrap;
+  }
+}
