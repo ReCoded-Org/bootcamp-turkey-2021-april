@@ -1,12 +1,18 @@
 const form = document.getElementById('github-form');
 const query = document.getElementById('search');
 
+const repoList = document.getElementById('repos-list');
+repoList.style.display= "none";
+
+
+
 form.addEventListener('submit', (e) => {
   e.preventDefault()
   fetch(`https://api.github.com/search/users?q=${query.value}`)
   .then (resp => resp.json())
   .then (json => {
     renderDate(json) //call back function defined next
+    emptyList()
   })
 })
 
@@ -18,10 +24,10 @@ function renderDate(user) {
     // creating a new variable for each of the users' details
     
     const li = document.createElement('li');
-    const username = document.createElement('h2');
+    const username = document.createElement('h3');
     const image = document.createElement('img');
     const url = document.createElement('a');
-    const line = document.createElement('br');
+    const line = document.createElement('hr');
 
 
     // create a button to show all repos of a specific user
@@ -30,8 +36,8 @@ function renderDate(user) {
 
     //linking the details of the users as json to the created element
     username.innerText = `${user.items[i].login}`;
-    url.href = `${user.items[i].url}`
-    url.innerText = `${user.items[i].url}`
+    url.href = `${user.items[i].html_url}`
+    url.innerText = `${user.items[i].html_url}`
     url.target = "_blank"
     image.src = `${user.items[i].avatar_url}`
     image.style.display = "block";
@@ -39,28 +45,38 @@ function renderDate(user) {
     showRepos.innerText = "show repositories";
     showRepos.style.marginTop = "20px";
     showRepos.style.marginBottom = "50px";
+    showRepos.className +=  "show";
 
 
     // append the elements(users) to the page
     li.appendChild(username);
     li.appendChild(image);
     li.appendChild(url);
+    li.appendChild(showRepos);
     li.appendChild(line);
-    li.appendChild(showRepos)
     list.appendChild(li);
 
 
+    
     // addEventListener to each h2 to show repositories
     showRepos.addEventListener('click', (e) => {
       fetch(`https://api.github.com/users/${username.innerText}/repos`)
       .then (repos => repos.json())
       .then (json => {
-        displayRepos(json)
+        displayRepos(json);
+        hideRepoList();
+
       })
       })
     }
 
-    function displayRepos(repositories) {
+    
+
+    
+  
+}
+
+function displayRepos(repositories) {
       const repoLis = document.getElementById('repos-list');
       repoLis.innerHTML = " ";
       for (let j = 0; j < repositories.length; j++) {
@@ -75,25 +91,18 @@ function renderDate(user) {
 
         repoItem.appendChild(repoUrl);
         repoLis.appendChild(repoItem);
-        console.log(repoLis.innerHTML)
+        console.log(repoLis.innerHTML);
+
+        repoLis.style.display = "block"
       }
-    }
 }
 
 
 
-//     })
+function emptyList(){
+    const repoList = document.getElementById('repos-list');
+    repoList.innerHTML = '';
+    repoList.style.display= "none";
+}
 
-
-
-
-
-// function 
-
-
-// 3. Clicking on one of these users should send a request to the
-//    [User Repos Endpoint](#user-repos-endpoint) and return data about all the
-//    repositories for that user.
-// 4. Using the response from the Users Repos Endpoint, display all the
-//    repositories for that user on the page.
 
