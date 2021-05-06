@@ -33,7 +33,7 @@ document.querySelector(".submitButton").addEventListener('click', (e) => {
     console.log(entries);
   }
 
-  appendObj()
+  appendObj();
 
  
   
