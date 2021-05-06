@@ -31,7 +31,7 @@ const input = document.getElementById("inputId");
 const incButton = document.getElementById('increaseButton');
 
 function increaseCounter() {
-  if (input.value.length == 0){
+  if (input.value == ''){
     span.innerHTML = parseInt(span.innerHTML) + 1;
   }
   else {
@@ -43,7 +43,7 @@ function increaseCounter() {
 const decButton = document.getElementById('decreaseButton');
 
 function decreaseCounter() {
-  if (input.value.length == 0){
+  if (input.value == ''){
     span.innerHTML = parseInt(span.innerHTML) - 1;
   }
   else {
