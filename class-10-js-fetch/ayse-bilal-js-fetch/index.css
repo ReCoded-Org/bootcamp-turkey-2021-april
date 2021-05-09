@@ -1,0 +1,90 @@
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* #github-container {
+  display: flex;
+  justify-content: center;
+} */
+
+ul {
+  list-style: none;
+}
+
+#github-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#search, #submit{
+  margin-bottom: 10px;
+}
+
+#radio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#user-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 30px 30px;
+  grid-template-areas:
+    ". . . . . . . . . ."
+    ". . . . . . . . . ."
+    ". . . . . . . . . ."
+    ". . . . . . . . . ."
+    ". . . . . . . . . .";
+}
+
+@media only screen and (max-width: 1350px){
+  #user-list{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      ". . . . . . . ."
+      ". . . . . . . ."
+      ". . . . . . . ."
+      ". . . . . . . ."
+      ". . . . . . . .";
+  }
+}
+
+@media only screen and (max-width: 1190px){
+  #user-list{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      ". . . . ."
+      ". . . . ."
+      ". . . . ."
+      ". . . . ."
+      ". . . . .";
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  #user-list{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      ". . ."
+      ". . ."
+      ". . ."
+      ". . ."
+      ". . .";
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #user-list{
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      ". ."
+      ". ."
+      ". ."
+      ". ."
+      ". .";
+  }
+}
