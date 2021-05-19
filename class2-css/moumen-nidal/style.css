@@ -1,0 +1,148 @@
+body{
+	display: flex;
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+  
+}
+h2, h3 {
+    margin: 0;
+}
+p {
+  color: gray;
+  font-size: 15px;
+  line-height: 28px;
+}
+
+
+.left-side{
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: right;
+  padding-right: 20px;
+  padding-top: 250px;
+  color: #fff;
+  background-color: #3d4f5d;
+  
+}
+.home {
+  list-style: none;
+  display: inline-flex;
+  margin: 10px 0px;
+}
+li.menu-element a{
+  border: solid 2px #8dacc4;
+  margin: 1px; 
+  padding: 5px;
+  font-size: 9px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.about {
+  color: #8dacc4;
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0;
+  padding-left: 20px;
+}
+.right-side{
+padding: 30px;
+}
+
+
+.post1{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+  margin: 0;
+}
+hr {
+  border-top: 1px solid #dcdcdc;
+}
+.small-pic {
+  width: 35px;
+  margin: 0;
+}
+
+.meta {
+  font-weight: 400;
+  color: gray;
+  letter-spacing: 2px;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+.author{
+  margin: 0;
+  font-weight: 400;
+  color: gray;
+}
+.author a{
+  text-decoration: none;
+  font-weight: 400;
+  color: #57a4d6;
+  margin: 0;
+}
+#green-button {
+  background: #5aba59;
+  color: #fff;
+  border: none;
+  padding: 3px 10px;
+}
+#blue-button{
+  background: #4d85d1;
+  color: #fff;
+  border: none;
+  padding: 3px 10px;
+
+}
+#red-button{
+  background: #df2d4f;
+  color: #fff;
+  border: none;
+  padding: 3px 10px;
+
+}
+#gray-button{
+  background: #999999;
+  color: #fff;
+  border: none;
+  padding: 3px 10px;
+
+}
+.pictures {
+  width: 98%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+#first-pic{
+width: 49%;
+}
+
+#second-pic{
+width: 49%;
+}
+
+.footer-list {
+  list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+  margin-top: 50px;
+}
+
+li.footer-item a{
+  text-decoration: none;
+  color: #c7c7c7;
+  padding: 0 10px;
+}
+
