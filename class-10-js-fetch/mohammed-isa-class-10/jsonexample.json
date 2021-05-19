@@ -1,0 +1,9 @@
+{
+    "countries": ["Iraq", "Turkey", "Yemen"],
+    "bootcamps": ["Web Development Bootcamp", "Android Development Bootcamp", "UI/UX Design Bootcamp"],
+    "camps": {
+        "iraq": ["Android Bootcamp, Erbil 2017", "Android Bootcamp, Erbil 2018", "Web Development Bootcamp, Erbil 2018", "Web Development Bootcamp, Qaraqosh 2018", "Advanced Android Bootcamp, Erbil 2019", "Web Development Bootcamp, Erbil 2020", "Web Development Bootcamp, Mosul 2020", "UI/UX Design Bootcamp Erbil 2020"],
+        "turkey": ["Android Bootcamp, Sanliurfa 2017", "Android Bootcamp, Istanbul 2018", "Web Development Bootcamp, Gaziantep 2019", "Web Development Bootcamp, Istanbul Dec 2019", "Web Development Bootcamp, Istanbul Feb 2020", "Web Development Bootcamp, Istanbul Jun 2020"],
+        "yemen": ["Web Development Bootcamp, Sana'a 2018", "Web Development Bootcamp, Sana'a 2019", "Web Development Bootcamp, Sana'a 2020"]
+    }
+}
