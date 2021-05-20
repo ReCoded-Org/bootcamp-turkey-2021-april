@@ -1,4 +1,4 @@
-// First
+//                                          FIRST                                       //
 
 let randomString = "this is a random string";
 
@@ -11,13 +11,16 @@ function capitalize(str) {
   })
 
   let capitalisedString = capitalisedWords.join(" ");
-  console.log(capitalisedString)
+  return capitalisedString;
 }
 
-// capitalize(randomString);
+// console.log(capitalize(randomString));
+
+//                                          //                                          //
 
 
-// Second
+
+//                                        SECOND                                        //
 
 
 let randomString1 = "hey gurl, lets javascript together sometime"
@@ -42,32 +45,37 @@ const swapCase = function(string) {
 
 };
 
-console.log(swapCase(randomString1));                                                                      
+// console.log(swapCase(randomString1));                                                                      
 
-// Third
-
-
-const shiftLetters = function(string){
-
-  let arrayOfletters = string.split("");
+//                                          THIRD                                   //
 
 
-  let ourNewArray = arrayOfletters.map((letter) => {
+const shiftLetters = function(string) {
 
-   for (let i=0; i<arrayOfletters.length; i++){
-     
-       let globalIndexOfletter = (arrayOfletters[i].charCodeAt())+1;
-       // console.log(globalIndexOfletter)
+  // Split the sentence into words.
+  let arrayOfWords = string.split(" ");
 
-       arrayOfletters[i] = String.fromCharCode(globalIndexOfletter[i])
 
-      return arrayOfletters
-       }    
+  let changedWords = arrayOfWords.map(function(word) {
+
+    //Split the words into letters in order to change their char codes individually.
+    let arrayOfLetters = word.split("");
+
+    let changedLetters = arrayOfLetters.map(function(letter) {
+
+      let charCodeOfTheLetter = letter.charCodeAt();
+      letter = String.fromCharCode(charCodeOfTheLetter - 1);
+      return letter;
+    })
+
+    let changedWord = changedLetters.join("");
+    return changedWord;
   })
-  
-let myLastVersion = arrayOfletters.join("");
-  console.log(myLastVersion);
+
+  let changedSentence = changedWords.join(" ");
+  return changedSentence;
 }
 
-// shiftLetters("abcxyz")
+// console.log(shiftLetters("abcxyz xYz"))  
 
+//                                           //                                     //
