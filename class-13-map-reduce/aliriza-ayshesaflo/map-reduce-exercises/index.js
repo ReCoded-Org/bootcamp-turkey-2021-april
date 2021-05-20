@@ -1,80 +1,80 @@
-// First
 
+//                                        FIRST                                       //
 
 let exampleArray = [
-    { name: "John", age: 21, budget: 23000 },
-    { name: "Steve",  age: 32, budget: 40000 },
-    { name: "Martin",  age: 16, budget: 2700 }
-  ];
+  { name: "John", age: 21, budget: 23000 },
+  { name: "Steve",  age: 32, budget: 40000 },
+  { name: "Martin",  age: 16, budget: 2700 }
+];
   
-  function reducer(accumulator, currentValue) {
-    return accumulator += currentValue.budget;
-  };
+function reducer(accumulator, currentValue) {
+  return accumulator += currentValue.budget;
+};
   
-  function getBudgets(arrayOfObjects) {
-    return arrayOfObjects.reduce(reducer, 0);
-  };
+function getBudgets(arrayOfObjects) {
+  return arrayOfObjects.reduce(reducer, 0);
+};
   
-  // getBudgets(exampleArray); 
+// console.log(getBudgets(exampleArray)); 
   
+//                                            //                                        //
+
+
+
+//                                          SECOND                                      //
   
+// First part of the second
   
-  // Second
-  
-  // First part of the second
-  
-  function countLetters(string) {
-    //string = "abbcccddddeeeee"
-    let letters = string.split("");
-    console.log(letters);
-  
-     const myFunction = letters.reduce((acc,item) => {
-  
-        //  console.log(acc);
-        //  console.log(item);
-      if(!acc[item]){
-        acc[item] = 0
-      }
-      acc[item]++
-      return acc;
-    }, {})
-    
-    console.log(myFunction);
-    return myFunction;
-  }
-  
-  // countLetters("abbcccddddeeeee"); 
-  
-  
-  
-  // Second part of the second
-  
-  function countLetters(string, target) {
-    let letters = string.split("");
-    
-    return letters.reduce((acc, item) => {
-    // console.log(acc);
-    // console.log(item);
-  
-    if (item === target) {
-      acc = true
+function countLetters(string) {
+
+  let letters = string.split("");
+
+  let obj = {};
+
+  letters.forEach(function(letter) {
+
+    if (!obj[letter]) {
+      obj[letter] = 1;
     }
-    else {
-      acc = false
+    else if (!!obj[letter]) {
+      obj[letter]++;
     }
+
+  })
+  return obj;
+}
+
+// countLetters("abbcccddddeeeee");
+
+
   
-    return acc
-    }, false)
+// Second part of the second
+
+function countLetters(word, target) {
+  let letters = word.split("");
   
+  return letters.reduce((acc, letter) => {
+
+  if (letter === target) {
+    acc = true;
+    return acc;
   }
-  
-  // console.log(countLetters("abcd", "d"))
-  
-  
-  
-  
-  
-  // Third
+  else if (letter !== target) {
+    acc = false;
+    return acc;
+  }
+
+  }, false)
+
+}
+
+// console.log(countLetters("abcd", "d"));
+
+//                                              //                                        //
+
+
+
+// Third
   
   
   
