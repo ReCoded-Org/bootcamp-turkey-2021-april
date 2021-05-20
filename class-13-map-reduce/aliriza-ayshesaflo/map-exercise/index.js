@@ -19,30 +19,30 @@ function capitalize(str) {
 
 // Second
 
+
 let randomString1 = "hey gurl, lets javascript together sometime"
 
 const swapCase = function(string) {
+
   let words = string.split(" ");
 
-  let modifiedWords = [];
+  let modifiedWords = words.map(function(word) {
 
-  let i = 0;
-  while (i < words.length) {
-    if (i % 2 === 0) {
-      modifiedWords.push(words[i].toUpperCase())
+    if (words.indexOf(word) % 2 === 0) {
+      return word.toUpperCase();
+    } 
+    else if (words.indexOf(word) % 2 === 1) {
+      return word;
     }
 
-    else if (i % 2 === 1) {
-      modifiedWords.push(words[i])
-    }
-    i++;
-  }
+  });
 
-  let sentence = modifiedWords.join(" ")
-  console.log(sentence)
+  let sentence = modifiedWords.join(" ");
+  return sentence;
+
 };
 
-//  swapCase(randomString1)                                                                             
+console.log(swapCase(randomString1));                                                                      
 
 // Third
 
