@@ -1,0 +1,93 @@
+/**
+ * Your CSS goes here.
+ */
+
+html, body{
+  background-image: url("https://images-na.ssl-images-amazon.com/images/I/71dMWuI0ELL._AC_SL1000_.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  
+  
+}
+
+.title{
+  display: flex;
+  justify-content: center;
+  font-style: oblique;
+  font-family: Bradley Hand, cursive;
+  color: orange;
+  font-size: 75px;
+}
+
+.storyTitle{
+  display: flex;
+  justify-content: center;
+  font-family: Bradley Hand, cursive ;
+  color: whitesmoke;
+  font-size:  25px;
+}
+
+.underEditPar{
+  background-color: whitesmoke;
+  border: 5px groove rgba(0, 128, 0, 0.823);
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 75px;
+  opacity: 80%;
+  
+}
+
+.afterEditPar{
+  background-color: wheat;
+  border: 5px groove rgba(255, 166, 0, 0.723);
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  opacity: 80%;
+  margin-bottom: 100px;
+  
+}
+
+.inputWord{
+  border-radius: 10px;
+  border: none;
+  background-color: whitesmoke;
+  color: orange;
+  width: 150px;
+  margin: 1px;
+  margin-top: 3px;
+  margin-bottom: 6px;
+  font-size: 25px;
+}
+
+.norWord{
+ font-size: 25px;
+}
+
+.outputWord{
+  color: red;
+  font-size: 25px;
+}
+
+.secondNorWord{
+  font-size: 25px;
+}
+
+footer >p{
+ display: flex;
+ justify-content: center;
+ color: rgba(85, 4, 4, 0.762);
+ font-size: 20px;
+ font-weight: bold;
+
+}
+
+footer >h3{
+ display: flex;
+ justify-content: center;
+ color: rgba(255, 255, 255, 0.785);
+ font-size: 20px;
+ font-weight: bold;
+}
