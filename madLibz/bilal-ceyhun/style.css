@@ -1,0 +1,120 @@
+/**
+ * Your CSS goes here.
+ */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;  
+  /* border: 1px solid red; */
+  
+}
+
+body {
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.pexels.com/photos/5011647/pexels-photo-5011647.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+
+}
+
+#header {
+  margin: 35px 0;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 50px;
+}
+h3 {
+  margin-top: 5px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 30px;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+#textWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  font-family: 'Architects Daughter', cursive;
+  line-height: 2em;
+  font-size: 20px;
+}
+
+input {
+  width: 150px;
+  height: 30px;
+  font-family: 'Architects Daughter', cursive;
+  border-radius: 10px;
+}
+
+.madLibsEdit {
+  margin-right: 1%;
+}
+
+.madLibsPreview{
+  margin-left: 1%;
+  align-self: flex-start;
+}    
+
+.madLibsEdit, .madLibsPreview {
+  width: 48%;
+  border: 0.5px white dotted; 
+  padding: 10px;
+}
+
+#footer{
+  margin-top: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 17px;
+  font-family: 'Architects Daughter', cursive;
+  font-weight: bold;
+  font-style: italic;
+}
+
+#links {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+  justify-content: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+a:hover{
+  background-color: #ff00007a;
+  color: black;
+  border-radius: 10px;
+}
+
+footer {
+  margin-top: 20px; 
+  font-size: 1em;
+  align-self: center;
+  bottom: 0;
+  margin-bottom: 30px;
+  font-family: 'Architects Daughter', cursive;
+}
+
