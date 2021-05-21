@@ -1,0 +1,66 @@
+/**
+* Your CSS goes here.
+*/
+body {
+  background-image: url("cover.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+header, footer {
+  height: 20%;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-family: Snell Roundhand, cursive;
+  margin: 50px;
+  font-size: 40px;
+  color: white;
+}
+
+h2 {
+  text-align: center;
+  font-family: Snell Roundhand, cursive;
+  font-size: 40px;
+}
+
+p {
+  text-align: justify;
+  text-justify: inter-word;
+  padding: 10px;
+}
+
+.flex-container {
+  display: flex;
+  margin: 60px;
+  background-color: hsla(120, 100%, 25%, 0.3);
+  justify-content: space-around;
+    height: 60%;
+}
+
+.flex-container > div {
+  background-color: white;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  font-size: 15px;
+  width: 50%;
+}
+
+footer > span {
+	text-align: center;
+  background-color: gray;
+  margin: 0px;
+  padding: 10px;
+  color: white;
+}
+
+input:focus {
+  background-color: lightblue;
+}
+
+input:placeholder-shown {
+  background-color: rgb(191, 240, 162);
+}
