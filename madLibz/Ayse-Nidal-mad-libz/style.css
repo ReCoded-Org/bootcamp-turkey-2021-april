@@ -1,0 +1,75 @@
+/**
+ * Your CSS goes here.
+ */
+  body {
+    background: url(img/lp9.jpeg);
+    background-position: center;
+    background-size: cover;
+  }
+
+ .container {
+   display: flex;
+   flex-wrap: wrap;
+   width: 100%;
+ }
+
+ .header {
+   text-align: center;
+   font-family: 'Pangolin', cursive;
+   font-size: 45px;
+   letter-spacing: 2px;
+   color: rgb(80, 13, 13);
+   text-shadow: 
+    1px 0px 1px #ccc, 0px 1px 1px #eee, 
+    2px 1px 1px #ccc, 1px 2px 1px #eee,
+    3px 2px 1px #ccc, 2px 3px 1px #eee,
+    4px 3px 1px #ccc, 3px 4px 1px #eee,
+    5px 4px 1px #ccc, 4px 5px 1px #eee,
+    6px 5px 1px #ccc, 5px 6px 1px #eee,
+    7px 6px 1px #ccc;
+ }
+
+ .madLibsEdit , .madLibsPreview {
+   width: 45%;
+   border: 2px solid #FC0;
+   border-radius: 15px;
+   box-shadow: 0 0 5px 5px #f3d660;
+   margin: 1rem auto;
+   padding: 1rem;
+   /* color: #5747EC; */
+   font-weight: bold;
+   background-color: rgba(255, 255, 255, 0.2);
+ }
+
+ .madLibsEdit p, .madLibsPreview p {
+   line-height: 2.5rem;
+   text-shadow: 1px 1px 2px rgb(247, 212, 212);
+   letter-spacing: 1px;
+ }
+
+ .inputClass {
+   border: 2px solid #FC0;
+   border-radius: 5px;
+   padding: 3px;
+   outline: none;
+   background-color: rgba(255, 255, 255, 0.7);
+   padding-left: 7px;
+ }
+
+ .inputClass::placeholder { 
+   font-weight: 600;
+ }
+
+ .spanClass {
+   /* color: rgb(73, 189, 6); */
+   font-weight: bolder;
+   /* font-style: italic; */
+   background: #FC0;
+   letter-spacing: 0;
+ }
+
+ @media screen and (max-width: 768px) {
+  .madLibsEdit , .madLibsPreview {
+   width: 100%;
+ }
+}
