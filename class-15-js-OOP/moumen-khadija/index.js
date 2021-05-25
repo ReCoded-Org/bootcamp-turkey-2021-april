@@ -1,7 +1,7 @@
 // Add a static function compareSpeed that compares two cars and returns the object that is the faster car.
 // Change the speed setter so that it throws an error if the caller tries to make it greater than 300km/h.
 // Write a getter speedInKmSec that returns the speed in km/sec. It should use the speed in km/h.
-
+ 
 
 class Car {
   // Part 1. Constructor (REVIEW)
