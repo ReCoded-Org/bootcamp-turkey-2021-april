@@ -94,7 +94,7 @@ class APIService {
   }
 }
 
-// HomePage is to show list of movies / list of Actors
+// Homepage class to render either Movies, or Actors, depending on the given choice
 class HomePage {
   static container = document.getElementById('container');
   
@@ -212,7 +212,7 @@ class MoviePage {
   }
 }
 
-// MovieSection is used to generate the single movie page
+// Single Movie Page:
 class MovieSection {
   static renderMovie(movie, actors, trailer, rec) {
 
@@ -412,6 +412,16 @@ class MovieSection {
   }
 }
 
+// Comment written by Bilal Avvad:
+/*
+  This class is the class i'm most proud of,
+  1- while reading the API data i noticed too many errors that i tried to fix using some self-calling functions
+  2- I added a function that i haven't seen anyone else added, which is calculating the age of the actors
+  3- I added 12 movies for each actor, but some actors had below 12 movies, so i made an if condition so that no matter what i don't get any error.
+  4- Due to number 3, i had to make an event listener with an if condition as well to make sure everything is working with no errors to be found.
+  5- I added an if conditions to check if the image is available or not, and made a default image that you can see in the (img) folder.
+*/
+// Single Actor Page:
 class ActorPage {
 
   static container = document.getElementById('container');
@@ -582,6 +592,7 @@ class Movie {
   }
 }
 
+// Print the results of the search to the screen:
 class OtherPages {
   static container = document.getElementById('container');
 
@@ -638,6 +649,7 @@ class OtherPages {
 
 document.addEventListener("DOMContentLoaded", App.run('now_playing'));
 
+// List of event listeners starts here
 const homeButton = document.getElementById('homeButton');
 const moviesButton = document.getElementById('moviesHomePage');
 const actorsButton = document.getElementById('actorsHomePage');
@@ -699,6 +711,16 @@ searchButton.addEventListener('click', function(e){
   APIService.fetchSearchedItem(searchBox);
 });
 
+// Comment written by Bilal Avvad:
+/*
+  This function is the function i'm also most proud of,
+  1- I added all movie genres to the html file in the same order as the the API data of it.
+  2- By doing so, i can easily compare the fetched data with the chosen element.
+  3- Since they are in the same order, the index at which a genre has been chosen, it will select the same index in the data from the API to get the id.
+  4- Comparing the id with the list of movies we have to make sure we made call the correct movie.
+  5- Filtering according to genre have 19 selectable items, while according to type have 4 selectable items. by making them in order, i was able to manipulate the numbers to continue.
+  6- if the numbers of the index (in the html) is more than 19, it will check the else condition and apply it.
+*/
 // Filtering movies
 for(let i = 0; i < filterButton.length; i++){
   filterButton[i].addEventListener('click', function(){
@@ -728,3 +750,38 @@ for(let i = 0; i < filterButton.length; i++){
     }
   });
 }
+
+// Comment written by Bilal Avvad:
+/*
+  This is the most hard part in the whole project for me,
+  1- Making everything shorter in terms of code (i tried as much as possible)
+  2- Initially, following up where things are being called and catching what is happening, eventually it was easy given how many times i had to do it.
+  3- Trying to use simple yet, small code to do the functionalities because i think (if i didn't work almost solo) 750 Lines of code is bad and it can be improved and refactored (As Halit and Ammar always tell me to do so)
+  4- Keeping up with time, university, and normal family work was a bit challenging but i rushed through it and finished it in less than 2 weeks :)
+  5- I'm super glad of how the website turned out to be even though i'm not fully satisfied but it is a working beauty!
+
+  Overall i learned that planning and taking the time to understand anything is very much needed while working on such big projects,
+  Also, in the future i will have to work with others so trying to read someone else's code to understand it and work with it was an amazing experience!
+*/
+
+/*          *     ,MMM8&&&.            *
+                  MMMM88&&&&&    .
+                 MMMM88&&&&&&&
+     *           MMM88&&&&&&&&
+                 MMM88&&&&&&&&
+                 'MMM88&&&&&&'
+                   'MMM8&&&'      *
+          |\___/|
+          )     (             .              '
+         =\     /=
+           )===(       *
+          /     \
+          |     |
+         /       \
+         \       /
+  _/\_/\_/\__  _/_/\_/\_/\_/\_/\_/\_/\_/\_/\_
+  |  |  |  |( (  |  |  |  |  |  |  |  |  |  |
+  |  |  |  | ) ) |  |  |  |  |  |  |  |  |  |
+  |  |  |  |(_(  |  |  |  |  |  |  |  |  |  |
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |              */
