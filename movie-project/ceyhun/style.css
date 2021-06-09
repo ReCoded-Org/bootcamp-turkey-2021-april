@@ -1,0 +1,682 @@
+html,
+body {
+  margin: 0;
+  background-image: url(./background.jpg);
+
+  background-attachment: fixed;
+  background-size: 3000px 2000px;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding-right: 5px;
+  padding-left: 5px;
+  color: white;
+}
+
+#container {
+  margin-top: 5%;
+}
+
+#aboutArticle {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.row {
+  width: 100%;
+}
+.embed-responsive-item,
+.embed-responsive {
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+#searchInputId {
+  border-radius: 15%;
+}
+
+#searchButtonId {
+  border-radius: 15%;
+}
+
+#movie-backdrop {
+  width: 100%;
+}
+
+.container {
+  padding-top: 32px;
+}
+
+/* Hover */
+.hoverDetails {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  font-weight: bolder;
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity 0.25s;
+  border-radius: 10%;
+}
+
+.hoverDetails:hover {
+  opacity: 1;
+}
+
+.movieHomepageDiv {
+  position: relative;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+
+  text-align: center;
+  width: 74%;
+  height: 350px;
+}
+
+.actorAllMoviesPic {
+  cursor: pointer;
+}
+
+#navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: baseline;
+  align-content: stretch;
+}
+
+#nestedNavbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: baseline;
+  align-content: stretch;
+}
+
+.movieHomepageDiv {
+  max-width: 33%;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
+
+.movieImgHomepage {
+  width: 100%;
+  height: auto;
+  border-radius: 10%;
+}
+
+.movieHomepageDiv > h3 {
+  text-align: center;
+  /* font-size: 95%; */
+}
+
+footer {
+  font-size: 30px;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  margin-bottom: -1%;
+  padding: 1.5%;
+  height: 8.5rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+#movie-backdrop {
+  width: 35%;
+}
+
+.imageOneMovie {
+  text-align: center;
+}
+
+#castInMovie {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+  align-content: stretch;
+}
+
+.castPicDiv {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+
+  text-align: center;
+}
+
+.similarMovies {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: stretch;
+
+  text-align: center;
+}
+
+.actorAllMoviesPic {
+  width: 100%;
+  padding: 10px;
+}
+
+.trailer {
+  text-align: center;
+}
+
+.embed-responsive-item {
+  /* text-align: center; */
+  width: 100%;
+  height: 500px;
+}
+
+.productionCompDiv {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  text-align: center;
+}
+
+.productionCompDiv > img {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.productionCompMain {
+  text-align: center;
+}
+
+#productionCompDiv {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+/*Media Queries*/
+
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 120px) and (max-width: 767px) {
+  /* For mobile: */
+  .container {
+    text-align: center;
+  }
+
+  .movieHomepageDiv {
+    max-width: 75%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    height: 500px;
+  }
+
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    text-align: center;
+  }
+
+  #nestedNavbar {
+    width: 100%;
+  }
+
+  #movie-backdrop {
+    width: auto;
+    height: 300px;
+  }
+
+  #castInMovie {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    text-align: center;
+  }
+
+  .castPicDiv {
+    padding-bottom: 20px;
+  }
+
+  .similarMovies {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    text-align: center;
+  }
+
+  .similarMoviesDiv {
+    padding-bottom: 10px;
+    border: 1px solid black;
+    margin-top: 10px;
+    border-radius: 10%;
+  }
+
+  #productionCompDiv {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    text-align: center;
+  }
+  .productionCompDiv {
+    padding-bottom: 20px;
+  }
+
+  /*Single Actor Page*/
+  #movieClassinActorPage {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+  }
+
+  .actorAllMoviesPic {
+    width: auto;
+    height: 350px;
+    padding-bottom: 20px;
+    border-radius: 10%;
+  }
+  /*Single Actor Page*/
+
+  /*Actors Page*/
+  .popularActorDiv > img {
+    width: auto;
+    height: 350px;
+    padding-bottom: 20px;
+  }
+  .popularActorDiv {
+    border: 1px solid;
+    border-color: black;
+    padding-bottom: 20px;
+  }
+
+  /*Actors Page*/
+
+  #container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: stretch;
+  }
+
+  .movieHomepageDiv {
+    height: auto;
+    /* padding-bottom: 20px; */
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 10%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: stretch;
+  }
+
+  .movieImgHomepage {
+    border-radius: 10%;
+  }
+
+  footer {
+    position: fixed;
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    right: 0;
+    bottom: 0;
+    margin-bottom: -1%;
+    padding: 1.5%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  footer > a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .embed-responsive,
+  .embed-responsive-item {
+    width: auto;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  html,
+  body {
+    margin: 0;
+    /* background-image: url(img/background.jpg);
+  background-repeat: repeat; */
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+
+  .overviewForTablet {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+  }
+
+  #movie-backdrop {
+    width: 100%;
+    height: auto;
+  }
+
+  .actorsInMovie {
+    text-align: center;
+  }
+
+  #castInMovie {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: baseline;
+    align-content: stretch;
+  }
+
+  .castPic {
+    width: 100%;
+  }
+
+  .castPicDiv {
+    width: 100%;
+    padding-left: 10px;
+  }
+
+  .similarMovies {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: baseline;
+    align-content: stretch;
+  }
+
+  .productionCompDiv {
+    width: 75%;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+
+  #container > .nestedPopularActorDiv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+  }
+
+  #container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+  }
+
+  .popularActorDiv {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+  }
+
+  .popularActorDiv > img {
+    width: 300%;
+  }
+
+  footer {
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    height: 70px;
+    margin-bottom: -1%;
+    padding: 1.5%;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+  }
+
+  footer > a {
+    text-decoration: none;
+    color: white;
+  }
+
+  #movie-backdrop {
+    width: auto;
+    height: 300px;
+  }
+
+  .overviewForTablet {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+  }
+
+  #movieClassinActorPage {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: baseline;
+    align-content: stretch;
+  }
+
+  .movieHomepageDiv {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    height: auto;
+    padding: 1%;
+  }
+
+  .trailer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+  }
+
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
+}
+
+iframe {
+  /* max-width: 250%; */
+  height: auto;
+}
+
+@media only screen and (min-width: 769px) {
+  /* For desktop: */
+
+  .movieHomepageDiv {
+    max-width: 33%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    height: auto;
+    padding: 1%;
+  }
+
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}

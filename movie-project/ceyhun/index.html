@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>CeyhunMDB</title>
+</head>
+
+<body>
+    <div class="layer">
+
+    </div>
+
+
+
+    <div id = "navbar">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container-fluid"> 
+              <div>
+                <a class="navbar-brand active" id="homeButton" href="#" style="cursor: pointer;">CMDB</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              </div>
+        
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto justify-content-center">
+                  <li class="nav-item dropdown">
+        
+                    <li class="nav-item">
+                        <a class="nav-link" id="homepage" href="index.html">Homepage</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="about" href="#">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="actors" href="#" onclick="AppPopularActor.run()">Actors</a>
+                      </li>
+             
+        
+        
+        
+        
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Genres
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Adventure</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Animation</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Comedy</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Crime</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Documentary</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Drama</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Family</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Fantasy</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">History</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Horror</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Music</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Mystery</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Romance</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Science Fiction</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">TV Movie</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Thriller</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">War</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Western</a>
+                    </div>
+                  </li> 
+                  <li>
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Movies
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a id="popular" href="#" onclick="App.run('popular')">POPULAR MOVIES</a>
+                        <div class="dropdown-divider"></div>
+                        <a id="topRate" href="#" onclick="App.run('top_rated')">TOP RATE</a>
+                        <div class="dropdown-divider"></div>
+                        <a id="nowPlaying" href="#" onclick="App.run('now_playing')">NOW PLAYING</a>
+                        <div class="dropdown-divider"></div>
+                        <a id="upComing" href="#" onclick="App.run('upcoming')">UP COMING</a>
+                    </div>
+                  </li>
+                </ul>
+                <form id="formHTML">
+                    <input id="searchInputId" type="text" placeholder="Search" value="">
+                    <button id="searchButtonId" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        
+    </div>
+
+    <div id="container" class="container">
+    </div>
+
+
+
+    <footer>
+        <a href="https://github.com/ceyhungulbas">Ceyhun Gulbas</a>
+    </footer>
+
+
+
+
+    <script src="oopscript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
