@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> <!--Bebas Neue-->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> <!--Bebas Neue-->
+    <link rel="preconnect" href="https://fonts.gstatic.com"> <!-- Mate SC --> <!-- For headers -->
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet"> <!-- Mate SC -->
+    <link rel="preconnect" href="https://fonts.gstatic.com"> <!-- Poppins --> <!-- For paragraohs -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&family=Poppins:wght@300&display=swap" rel="stylesheet"> <!-- Poppins --> 
+    <title>Movie</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      
+        <!-- Logo and toggler button -->
+        <a class="navbar-brand offset-1" href="https://www.themoviedb.org/" target="_blank"><img class="img-fluid" width="140px" src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_1-5bdc75aaebeb75dc7ae79426ddd9be3b2be1e342510f8202baf6bffa71d7f5c4.svg" alt="TMBD logo"></a>
+        <button class="navbar-toggler mx-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>      
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item active" >
+              <a class="nav-link h5" href="#" onclick="App.run('now_playing')">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link h5" href="#" onclick="ActorListPage.run()">Actors</a>
+            </li>
+            <li class="dropdown">
+              <a class="nav-link h5 dropdown-toggle" href="#" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                Movie Genres
+              </a>
+            
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#" onclick="App.run(28)">Action</a></li>
+                <li><a class="dropdown-item" href="#" onclick="App.run(12)">Adventure</a></li>
+                <li><a class="dropdown-item" href="#" onclick="App.run(16)">Animation</a></li>
+                <li><a class="dropdown-item" href="#" onclick="App.run(35)">Comedy</a></li>
+                <li><a class="dropdown-item" href="#" onclick="App.run(80)">Crime</a></li>
+                <li><a class="dropdown-item" href="#" onclick="App.run(99)">Documentary</a></li>
+                <li><a class="dropdown-item" href="#" onclick="App.run(18)">Drama</a></li>
+                <li><a class="dropdown-item" href="#" onclick="App.run(10751)">Family</a></li>
+                <li><a class="dropdown-item" href="#" onclick="App.run(14)">Fantasy</a></li>
+                <li><a class="dropdown-item" href="#" onclick="App.run(36)">History</a></li>
+                <li><a class="dropdown-item" href="#" onclick="App.run(27)">Horror</a></li>
+                <li><a class="dropdown-item" href="#" onclick="App.run(10432)">Music</a></li>
+                <li><a class="dropdown-item" href="#" onclick="App.run(9648)">Mystery</a></li>
+                <li><a class="dropdown-item" href="#" onclick="App.run(10749)">Romance</a></li>
+                <li><a class="dropdown-item" href="#" onclick="App.run(878)">Sci-Fi</a></li>
+                <li><a class="dropdown-item" href="#" onclick="App.run(53)">Thriller</a></li>
+                <li><a class="dropdown-item" href="#" onclick="App.run(10770)">TV Movie</a></li>
+                <li><a class="dropdown-item" href="#" onclick="App.run(10752)">War</a></li>
+                <li><a class="dropdown-item" href="#" onclick="App.run(37)">Western</a></li>
+
+
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="nav-link h5 dropdown-toggle" href="#" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                Filter
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#" onclick="App.run('popular')">Popular</a></li>
+                <li><a class="dropdown-item" href="#" onclick="App.run('top_rated')">Top Rated</a></li>
+                <li><a class="dropdown-item" href="#" onclick="App.run('now_playing')">Now Playing</a></li>
+                <li><a class="dropdown-item" href="#" onclick="App.run('upcoming')">Up Coming</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link h5" href="#" onclick="AboutPage.renderAboutPage()">About</a>
+            </li>
+          </ul>
+          <form class="form-inline m-3 my-lg-0 offset-lg-2 offset-xl-3 d-flex">
+            <input class="form-control mr-sm-2" id="search" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" id="submit" type="submit">Search</button>
+          </form>
+        </div>
+
+      </nav>
+
+    <div id="container" class="container-fluid"></div>
+
+    <footer class="p-4">
+      <p class="text-center" style="color: black; font-size: 24px;">This website had been created by the collaboration of Ali Riza Sahin & Ufuk Deniz Demirbilek.</p>
+      <div class="d-flex  justify-content-between">
+
+        <div class="footer-card d-flex flex-column text-center p-4" style="flex: 0 1 50%">
+          <h5>Ali Rıza Şahin</h5>
+          <div class="footer-logos">
+            <a class="text-center mx-2" href="https://github.com/ARS-coding">
+              <img class="github" src="logos/600px-GitHub_logo_2013.svg.png">
+            </a>
+            <a class="text-center mx-2" href="https://www.linkedin.com/in/ali-r%C4%B1za-%C5%9Fahin-3a5721202/">
+              <img class="linkedin" src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Logo.svg.original.svg">
+            </a>
+          </div>
+
+        </div>
+
+        <div class="footer-card d-flex flex-column text-center p-4" style="flex: 0 1 50%">
+          <h5>Ufuk Deniz Demirbilek</h5>
+
+          <div class="footer-logos ">
+            <a class="text-center mx-2 " href="https://github.com/udenizdemirbilek">
+              <img class="github" src="logos/600px-GitHub_logo_2013.svg.png">            
+            </a>
+            
+            <a class="text-center mx-2" href="https://www.linkedin.com/in/ufuk-deniz-demirbilek-226636135/">
+              <img class="linkedin" src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Logo.svg.original.svg">
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </footer>
+
+    <script src="./oop-script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <!-- <script type="text/javascript" src="script.js"></script> -->
+</body>
+
+</html>    
