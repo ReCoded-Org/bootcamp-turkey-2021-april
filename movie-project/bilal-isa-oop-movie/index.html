@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <title>Movie</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container-fluid"> 
+      <div>
+        <a class="navbar-brand active" id="homeButton" href="#">The Movie DB</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto justify-content-center">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Filter
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Adventure</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Animation</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Comedy</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Crime</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Documentary</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Drama</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Family</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Fantasy</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">History</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Horror</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Music</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Mystery</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Romance</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Science Fiction</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">TV Movie</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Thriller</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">War</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Western</a>
+            </div>
+          </li> 
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Sort by
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Currently Playing</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Most Popular</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Top Rated</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Upcoming</a>
+            </div>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link" id="moviesHomePage" href="#">Movies <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="actorsHomePage" href="#">Actors </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="aboutHomePage" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="contactUsPage" href="#">Contact Us</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="searchBox">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="search">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div id="container" class="container"> </div>
+
+  <div class="hidden" id="about">
+    <div class="content justify-content-center container">
+      <div class="aboutUs">
+        <h2>Hi there!</h2>
+        <h3>Let's talk about "The Movie DB"</h3>
+        <p>
+          The aim of this website is to allow the user to freely interact and gain information about any movie/actor wanted. With all updated database and responsive website. Your laugh brings us joy! The advantages of using this website are:
+        </p>
+      </div>
+      <div>
+        <h3> 1) Find updated newest movies:</h3>
+        <p> The website provide you with a list of movies out there, and updated at all times!. You can check related movies, movie trailer, cast, and even the producers of the movie. All with just one click away.</p>
+
+        <h3> 2) Find updated newest actors information:</h3>
+        <p> Not only we have all updated movies, also all updated actors information, if you click on any actor you will find a brief explanation about the actor, their age, date of birth, and even their movies!</p>
+
+        <h3> 3) Filter movies depending on your preference:</h3>
+        <p> Using one single button, you can filter out the movies to the preference of your choice, want some comedy movies ? just click that button and magic will happen.</p>
+
+        <h3> 4) Search movies and actors:</h3>
+        <p> Looking for a specific movie/actor ? all you need to do is type its name in the search box, and vwallah, its showcasing all matching names for you!</p>
+      </div>
+      <br>
+      <div class="aboutUs">
+        <h2> If you encountered any issue or bugs please contact us!</h2>
+        <p> Credits to <a href="https://www.themoviedb.org/">The Movie DB (TMDB)</a> for using their API to fetch all required data!</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="hidden" id="contactUs">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-6">
+          <a href="https://github.com/awadbilal" target="_blank">
+            <div>
+              <img src="https://avatars.githubusercontent.com/u/81809505?v=4" alt="Bilal Avvad" class="img-thumbnail">
+            </div>
+            <div>
+              <h4> Bilal Avvad </h4>
+            </div>
+          </a>
+        </div>
+        <div class="col-6">
+          <a href="https://github.com/Isa-Tekinkaya" target="_blank">
+            <div>
+              <img src="https://avatars.githubusercontent.com/u/42121090?v=4" alt="Isa Tekinkaya" class="img-thumbnail">
+            </div>
+            <div>
+              <h4> Isa Tekinkaya </h4>
+            </div>
+          </a>
+        </div>
+        <div class="col-4">
+          <a href="https://github.com/halitbatur" target="_blank">
+            <div>
+              <img src="https://avatars.githubusercontent.com/u/61846570?v=4" alt="Halit Batur" class="img-thumbnail">
+            </div>
+            <div>
+              <h4> Halit Batur </h4>
+            </div>
+          </a>
+        </div>
+        <div class="col-4">
+          <a href="https://github.com/Ammar-64" target="_blank">
+            <div>
+              <img src="https://avatars.githubusercontent.com/u/35445761?v=4" alt="Ammar Sammour" class="img-thumbnail">
+            </div>
+            <div>
+              <h4> Ammar Sammour </h4>
+            </div>
+          </a>
+        </div>
+        <div class="col-4">
+          <a href="https://github.com/Shrreya" target="_blank">
+            <div>
+              <img src="https://avatars.githubusercontent.com/u/9050664?v=4" alt="Shrreya Bhatachaarya" class="img-thumbnail">
+            </div>
+            <div>
+              <h4> Shrreya Bhatachaarya </h4>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./oop-script.js"></script>
+</body>
+
+</html>
