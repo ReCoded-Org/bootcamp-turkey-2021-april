@@ -1,0 +1,108 @@
+const form = document.getElementById('github-form');
+const query = document.getElementById('search');
+
+const repoList = document.getElementById('repos-list');
+repoList.style.display= "none";
+
+
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault()
+  fetch(`https://api.github.com/search/users?q=${query.value}`)
+  .then (resp => resp.json())
+  .then (json => {
+    renderDate(json) //call back function defined next
+    emptyList()
+  })
+})
+
+
+function renderDate(user) {
+  const list = document.getElementById('user-list');
+  list.innerHTML = " ";
+  for(let i = 0; i <user.items.length; i++) {
+    // creating a new variable for each of the users' details
+    
+    const li = document.createElement('li');
+    const username = document.createElement('h3');
+    const image = document.createElement('img');
+    const url = document.createElement('a');
+    const line = document.createElement('hr');
+
+
+    // create a button to show all repos of a specific user
+    const showRepos = document.createElement('button')
+
+
+    //linking the details of the users as json to the created element
+    username.innerText = `${user.items[i].login}`;
+    url.href = `${user.items[i].html_url}`
+    url.innerText = `${user.items[i].html_url}`
+    url.target = "_blank"
+    image.src = `${user.items[i].avatar_url}`
+    image.style.display = "block";
+    image.style.height = "200px";
+    showRepos.innerText = "show repositories";
+    showRepos.style.marginTop = "20px";
+    showRepos.style.marginBottom = "50px";
+    showRepos.className +=  "show";
+
+
+    // append the elements(users) to the page
+    li.appendChild(username);
+    li.appendChild(image);
+    li.appendChild(url);
+    li.appendChild(showRepos);
+    li.appendChild(line);
+    list.appendChild(li);
+
+
+    
+    // addEventListener to each h2 to show repositories
+    showRepos.addEventListener('click', (e) => {
+      fetch(`https://api.github.com/users/${username.innerText}/repos`)
+      .then (repos => repos.json())
+      .then (json => {
+        displayRepos(json);
+        hideRepoList();
+
+      })
+      })
+    }
+
+    
+
+    
+  
+}
+
+function displayRepos(repositories) {
+      const repoLis = document.getElementById('repos-list');
+      repoLis.innerHTML = " ";
+      for (let j = 0; j < repositories.length; j++) {
+        const repoItem = document.createElement('li');
+        const repoUrl = document.createElement('a');
+
+
+        repoUrl.href = `${repositories[j].html_url}`
+        repoUrl.innerText = `${repositories[j].html_url}`
+        repoUrl.target = "_blank"
+
+
+        repoItem.appendChild(repoUrl);
+        repoLis.appendChild(repoItem);
+        console.log(repoLis.innerHTML);
+
+        repoLis.style.display = "block"
+      }
+}
+
+
+
+function emptyList(){
+    const repoList = document.getElementById('repos-list');
+    repoList.innerHTML = '';
+    repoList.style.display= "none";
+}
+
+
