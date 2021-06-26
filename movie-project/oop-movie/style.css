@@ -1,0 +1,262 @@
+body {
+    background-color: #3D0B37;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-left: 0;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+}
+
+.trailerDiv {
+    max-width: 80vw;
+}
+
+.homePageMovieImg {
+    cursor: pointer;
+    border-radius: 90px 90px 0 0;
+    border: solid black 6px;
+    outline: 0.01px solid wheat;
+    transition: all ease-in-out 300s;
+}   
+
+.homePageMovieImg:hover {
+    /* border: red solid 50px; */
+    outline: -6.01px solid wheat;
+    transition: all ease-in-out 300s;
+    outline-offset: -6.01px;
+}
+
+.movie-title {
+    color: rgb(247, 231, 202);
+    font-family: Bebas Neue, sans-serif;
+    text-decoration: underline red dotted;
+    font-size: 2rem;
+}
+
+#container h1,
+#container h2,
+#container h3,
+#container h4,
+#container h5,
+#container h6 {
+    font-family: Mate SC, Poppins, sans-serif;
+}
+
+[class="row"] {
+    width: 100%;
+}
+
+.actor-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#container .homePageMovies,
+#container .actorListPageActors {
+	justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    color: white;
+}
+
+#container .homePageMovies h3 {
+    font-family: Bebas Neue, Poppins, sans-serif;
+}
+
+.text-content {
+    font-size: 1.2rem;
+    margin: auto 0;
+}
+
+#castCrew-wrapper {
+    text-align: center;
+}   
+
+
+#castCrew-wrapper img,
+#related-movies img,
+#poster-wrapper img,
+.actorListPageImg,
+.searchResult-card img,
+.movie-card img,
+#actor-profile{
+    border-radius: 30px;
+    cursor: pointer;
+    outline: 0.01px solid wheat;    
+}
+
+#poster-wrapper {
+    height: 50%;
+    padding-bottom: 20px; 
+    padding-top: 20px;
+    margin: auto 0;
+}
+
+.hero {
+    color: white;
+    padding: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-color {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(37, 31, 21, 0.6);
+}
+
+.bg-img { 
+    position: relative;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+}
+
+.content-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.actor > img {
+    max-height: 200px;
+}
+
+.director-card > img {
+    height: 150px;
+}
+
+.related-movie > img {
+    max-height: 200px;
+} 
+
+#related-movies div {
+    text-align: center;
+}
+
+#related-movies img {
+    outline: 0.01px solid wheat;
+}
+
+.productionDiv {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 40px;
+}
+
+/* Navbar styles start */
+
+    .universal-nav-bar {
+        display: flex;
+        background-color: #382e2b;
+    }
+
+    .tmdb-logo {
+        margin-left: 10px;
+        max-width: 6rem;
+    }
+
+    .search-bar {
+        background-color: #816739;
+    }
+    .searchResults{
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .searchResult-card{
+        cursor: pointer;
+        padding: 15px;
+    }
+
+    .movie-card {
+        cursor:pointer;
+        padding: 15px;
+    }
+
+    p, h2, h3, h4, h6, li, h5 {
+        color: white;
+    }
+
+/* Navbar styles END */
+
+/* =============================================================== */
+
+/* Navbar styles start */
+
+    footer{
+        background-color: wheat;
+        margin-top: 30px;
+        font-family: Mate SC, Poppins, sans-serif;
+    }
+
+    footer a {
+        text-decoration: none;
+    }
+
+    footer h5{
+        color:black;
+    }
+
+    .github {
+        width: 80px;
+        height: 20px;
+    }
+
+    .linkedin {
+        width: 80px;
+        height: 20px;
+    }
+
+    .aboutPage {
+        text-align: center;
+    }
+
+    .nav-link{
+        text-align: center;
+    }
+
+    .dropdown-item{
+        text-align: center;
+    }
+
+    .trailer {
+        border-radius: 40px;
+    }
+
+    .footer-card {
+        outline: 0.01px solid wheat;
+    }
+
+/* Navbar styles END */
