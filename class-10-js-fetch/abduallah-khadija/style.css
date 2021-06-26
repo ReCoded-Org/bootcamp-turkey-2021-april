@@ -1,0 +1,33 @@
+body{
+  background-color: #ded9e2;
+}
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+#submit{
+  background-color: #80a1d4;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+#search{
+  border-color : #ffd23f;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+
+#github-container {
+  display: flex;
+}
+
+ul {
+  list-style: none;
+}
