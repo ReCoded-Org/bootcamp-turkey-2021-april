@@ -1,0 +1,666 @@
+/* Styling the body */
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.76), #000000c2), url('./src/background.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+}
+
+h3 {
+  margin-top: 10px;
+  color: rgb(255, 255, 255);
+}
+
+h2 {
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+
+img:hover {
+cursor: pointer;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+/* 
+img-link {
+    text-decoration: none;
+} */
+
+
+
+
+
+/* Styling the Nav Bar */
+.logo{
+  display: inline-block;
+  width: 40px;
+  margin-right: 20px;
+}
+
+.logoTitle{
+  color: wheat;
+  font-size: 35px;
+}
+
+.logoTitle a {
+  font-weight: 800;
+  color: wheat;
+  font-size: 35px;
+}
+
+.logoTitle a:hover{
+  text-decoration: none;
+  color: white;
+  border: none;
+  border-bottom: solid 3px turquoise;
+}
+
+#menu{
+  display: flex;
+  justify-content: space-between !important;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+#navigation {
+  padding-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+  /* align-content: flex-start; */
+  /* align-items: center; */
+  List-style: none;
+}
+
+#navigation li {
+  margin: 5px 25px;
+}
+
+button {
+  border: none;
+  color: white;
+  background-color: #343a40;
+}
+
+button:hover {
+  border-bottom: solid 3px turquoise;
+}
+
+button:focus, button:active {
+  outline: 0;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  /* background-color: none; */
+  /* color: black; */
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdownList {
+  display: none;
+  position: absolute;
+  background-color:  #343a40;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  max-height: 350px;
+  overflow: scroll;
+}
+
+/* Links inside the dropdown */
+.dropdownList button {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdownList a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdownList {display: block;}
+
+
+.submitButton{
+  border: solid 2px turquoise;
+  border-radius: 10px;
+  padding: 0 10px;
+}
+
+.submitButton:hover {
+  background-color: #40e0d0;
+  color: #343a40;
+  border: solid 2px white;
+  border-radius: 10px
+}
+
+#searchInput {
+  margin-bottom: 10px; 
+  border-radius: 10px;
+  outline: 0;
+  padding: 0 10px;
+}
+
+
+
+
+
+
+
+
+
+/* styling home page */
+.movieDiv {
+  cursor: pointer;
+  margin: 30px 0px;
+}
+
+.movieDiv h3 {
+  text-align: center;
+}
+
+.container {
+    padding-top: 32px;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 90%
+  }
+}
+
+
+.homePageDiv{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.movieImageHomeSearch  {
+  border-radius: 5px;
+  border: solid 3px wheat;
+  transition: all .1s ease-in-out;
+  box-shadow: 3px 3px 10px rgba(74, 251, 251, 0.76);
+}
+
+.movieImageHomeSearch:hover {
+    border: solid 4px lightskyblue;
+    transform: scale(1.05);
+    box-shadow: -4px -4px 10px rgba(206, 26, 191, 0.76);
+}
+
+
+footer {
+  margin-top: 40px;
+  text-align: center;
+  background-color: #343a40;
+  color: white;
+  padding: 50px;
+}
+
+footer h5{
+  color: turquoise;
+}
+
+footer p {
+  margin-bottom: 0px;
+}
+
+.APIWebsite {
+  background-color: white;
+  color: #343a40;
+  padding: 1px 10px;
+  border-radius: 10px; 
+}
+
+.APIWebsite:hover {
+  text-decoration: none;
+  background-color: turquoise;
+  color: white;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: center;
+}
+
+.footerContent div {
+  margin: 0 20px;
+}
+
+.fa-github {
+  color: wheat;
+}
+
+#movie-backdrop {
+    width: 100%;
+}
+
+
+
+
+/* Styling the research result page */
+.moviesSearchResultsTitle {
+  text-align: center;
+  margin-bottom: 25px;
+  color: turquoise;
+}
+
+#moviesSearchResults {
+  margin: auto;
+  max-width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.searchSingleMovie{
+  margin-bottom: 50px; 
+}
+.searchSingleMovie h3 {
+  text-align: center;
+  margin-top: 20px; 
+}
+
+.movieImageSearch {
+  border-radius: 5px;
+  border: solid 3px wheat;
+  transition: all .1s ease-in-out;
+  box-shadow: 3px 3px 10px rgba(74, 251, 251, 0.76);
+  background-color: white;
+  background-image: url(https://img.pngio.com/lighting-and-home-furnishing-products-represented-by-bostrom-png-unavailable-300_300.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 80%;
+
+}
+
+.movieImageSearch:hover {
+    border: solid 4px lightskyblue;
+    transform: scale(1.05);
+    box-shadow: -4px -4px 10px rgba(206, 26, 191, 0.76);
+}
+
+.searchSinglePerson {
+  margin-bottom: 50px; 
+}
+
+
+.personsSearchResultsTitle {
+  text-align: center;
+  margin-bottom: 25px;
+  color: turquoise;
+}
+
+#personsSearchResults{
+  margin: auto;
+  max-width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.searchSinglePerson h3{
+  text-align: center;
+  margin-top: 20px; 
+}
+
+.actorImageSearch {
+  border-radius: 5px;
+  border: solid 3px wheat;
+  transition: all .1s ease-in-out;
+  box-shadow: 3px 3px 10px rgba(74, 251, 251, 0.76);
+  background-color: white;
+  background-image: url(https://img.pngio.com/lighting-and-home-furnishing-products-represented-by-bostrom-png-unavailable-300_300.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 400x;
+  height: 80%;
+}
+
+.actorImageSearch:hover {
+    border: solid 4px lightskyblue;
+    transform: scale(1.05);
+    box-shadow: -4px -4px 10px rgba(206, 26, 191, 0.76);
+}
+
+
+
+
+
+
+
+/* Styling the popular actors page */
+.popularActorDiv {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 80%;
+}
+
+.actorPageSingleImg {
+  border-radius: 5px;
+  border: solid 3px wheat;
+  transition: all .1s ease-in-out;
+  box-shadow: 3px 3px 10px rgba(74, 251, 251, 0.76);
+  background-color: white;
+  background-image: url(https://img.pngio.com/lighting-and-home-furnishing-products-represented-by-bostrom-png-unavailable-300_300.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
+.actorPageSingleImg:hover {
+    border: solid 4px lightskyblue;
+    transform: scale(1.05);
+    box-shadow: -4px -4px 10px rgba(206, 26, 191, 0.76);
+}
+
+.actorPageSingle h2{
+  margin-top: 15px; 
+  text-align: center;
+}
+
+
+.actorPageSingle{
+  margin-bottom: 50px; 
+}
+
+
+
+
+
+
+
+
+/* styling the single movie page */
+#movie-backdrop {
+  border-radius: 5px;
+  border: solid 3px wheat;
+  transition: all .1s ease-in-out;
+  box-shadow: 3px 3px 10px rgba(74, 251, 251, 0.76);
+}
+
+#movie-title {
+  font-size: 45px;
+  font-style: bold;
+  color:turquoise ;
+}
+
+.singleMovieActors {
+  margin-top: 20px; 
+}
+
+
+
+#actors {
+    margin: 24px 16px 0 0;
+}
+
+
+
+/* Single Movie Page */
+/* margins between the movies inside the similar section of the single movie page */
+/* .MovieSummaryRow {
+  max-width: 80%;
+} */
+
+.five-actors {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.actor-of-movie-div {
+  margin: 10px 10px;
+}
+
+.actor-of-movie-div h5{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.actor-of-movie-img {
+  display: block;
+  width: 200px;
+  height: 300px;
+  border-radius: 5px;
+  border: solid 3px wheat;
+  transition: all .1s ease-in-out;
+  box-shadow: 3px 3px 10px rgba(74, 251, 251, 0.76);
+  background-color: white;
+  background-image: url(https://img.pngio.com/lighting-and-home-furnishing-products-represented-by-bostrom-png-unavailable-300_300.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.actor-of-movie-img:hover {
+    border: solid 4px lightskyblue;
+    transform: scale(1.05);
+    box-shadow: -4px -4px 10px rgba(206, 26, 191, 0.76);
+}
+
+
+.movie-of-similar-div{
+  margin: 10px 10px;
+  max-width: min-content;
+}
+
+.five-similar-movies {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+.similar-movie {
+  display: block;
+  width: 200px;
+  border-radius: 5px;
+  border: solid 3px wheat;
+  transition: all .1s ease-in-out;
+  box-shadow: 3px 3px 10px rgba(74, 251, 251, 0.76);
+  background-color: white;
+  background-image: url(https://img.pngio.com/lighting-and-home-furnishing-products-represented-by-bostrom-png-unavailable-300_300.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
+.similar-movie:hover {
+  border: solid 4px lightskyblue;
+  transform: scale(1.05);
+  box-shadow: -4px -4px 10px rgba(206, 26, 191, 0.76);
+}
+
+.movie-of-similar-div h5{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.trailerVideo{
+  border-radius: 5px;
+  border: solid 3px rgba(206, 26, 191);
+}
+
+
+.five-companies {
+  display: flex;
+  justify-content: space-around;
+  align-items: top;
+  flex-wrap: wrap;
+}
+
+#companyOfMovie {
+  max-width: min-content;
+}
+
+.imgOfCompanyOfMovie{
+  margin: 10px;
+  border-radius: 5px;
+  border: solid 3px wheat;
+  display: block;
+  width:  200px;
+  height: 200px;
+  object-fit: contain;
+  background-color: white;
+  background-size: contain;
+
+}
+
+.productionCompTitle{
+  text-align: center;
+}
+
+
+
+
+/* Single Actor Page */
+#actorMoviesCredits{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.singleMovieCreditDiv {
+  margin: 10px 10px;
+  max-width: 80%;
+}
+
+.singleMovieCreditsImage {
+  display: block;
+  border-radius: 5px;
+  border: solid 3px wheat;
+  background-image: url(https://img.pngio.com/lighting-and-home-furnishing-products-represented-by-bostrom-png-unavailable-300_300.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: white;
+  transition: all .1s ease-in-out;
+  box-shadow: 3px 3px 10px rgba(74, 251, 251, 0.76);
+  height: 80%;
+  
+}
+
+.singleMovieCreditsImage:hover {
+  border: solid 4px lightskyblue;
+  transform: scale(1.05);
+  box-shadow: -4px -4px 10px rgba(206, 26, 191, 0.76);
+}
+
+
+
+
+
+
+/* Styling about us page */
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.about-section h1{
+  color: wheat;
+}
+
+.about-section h3{
+  text-align: left;
+}
+
+
+.about-section p{
+  text-align: left;
+}
+
+.about-section li {
+  text-align: left;
+}
+
+
+
+/* Styling contact page */
+.TeamRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  margin: auto;
+}
+
+.teamColumn {
+  margin: 10px 10px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+
+.cardInfoContainer {
+  padding: 0 16px;
+  text-align: center;
+}
+
+.cardInfoContainer a:hover {
+  color: white;
+}
+
+.cardInfoContainer p, .cardInfoContainer h2{
+  color: #343a40;
+}
+
+.cardInfoContainer::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.cardButton {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.cardButton:hover {
+  background-color: #555;
+}
+
+
+
+
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ */

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Movie</title>
+</head>
+
+<body>
+  <nav id="menu" class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <!-- <img class="logo" src="./src/video.png" alt="website logo"> -->
+    <h1 class="logoTitle"><a href="https://oop-movie-reserve-1.mohamadziada.repl.co/">Movies Treasure</a></h1>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <ul id="navigation" class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <button id="homePage">Home</button>
+          </li>
+        <li>
+          <div class="dropdown">
+            <button class="dropbtn">Genres</button>
+            <div class="dropdownList">
+            </div>
+          </div>
+        </li>
+        <li class="nav-item active">
+          <button id="actorPage">Actors</button>
+        </li>
+        <li class="nav-item active">
+          <button id="aboutPage">About</button>
+        </li>
+        <li class="nav-item active">
+          <button id="contactPage">Contact</button>
+        </li>
+        <li class="nav-item active">
+          <form id="searchForm">
+            <input id="searchInput" type="text" placeholder="Search.." name="search">
+            <button class="submitButton" type="submit" name='submit'>Go!</button>
+          </form>
+      </ul>
+    </div>
+  </nav>
+
+    <div id="container" class="container">
+    </div>
+    <script src="./oop-script.js"></script>
+    <!-- <script type="text/javascript" src="script.js"></script> -->
+  <footer>
+    <h5>Produdly Developed Using <a class="APIWebsite" href="https://www.themoviedb.org/" target="_blank">The Movie Database API</a></h5>
+    <p>Created By</p>
+    <div class="footerContent">
+      <div>
+        <h6>MOHAMAD ZIADA</h6>
+        <a id="img-link" href="https://github.com/mohamadziada" target="_blank">
+        <i class="fa fa-github fa-2x" style="font-size:50px" alt="Mohamad Ziada"></i></a>
+      </div>
+      <div>
+        <h6>MULHAM HALLAK</h6>
+        <a id="img-link" href="https://github.com/MoulhamHallak" target="_blank">
+        <i class="fa fa-github fa-2x" style="font-size:50px" alt="Moulham"></i></a>
+      </div>
+    </div>
+</footer>
+
+</body>
+</html>
