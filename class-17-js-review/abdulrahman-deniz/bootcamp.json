@@ -1,0 +1,30 @@
+{
+  "title":"Turkey Bootcamp",
+  "instructors":["Halit", "Muhannad", "Shrreya", "Ammar"],
+  "students" : [
+    "Abduallah barmu",
+    "Abdulkadir İsa Tekinkaya",
+    "Ali Rıza Şahin",
+    "AYSE CIMEN BASAR",
+    "Ayşe Saflo",
+    "aziza iliasova",
+    "Belal Awad",
+    "Buse Şentürk",
+    "Ceyhun Gülbaş",
+    "Derya Kaygisiz",
+    "Hafise Nur Bacaksız",
+    "Khadija hawa",
+    "Kutay Kağan Özen",
+    "Mahmoud Moulham Hallak",
+    "MHD ABDULRAHMAN TAJI",
+    "Mohamad Moumen Hallak",
+    "Mohamad Ziada",
+    "Mohammed Alalaya",
+    "Muhammed Menar Yazıcı",
+    "Mustafa Şükrü Güldağ",
+    "Nidal Alrifai",
+    "Rahaf Shora",
+    "Ufuk Deniz Demirbilek",
+    "Yeşim Nur Akar"
+  ]
+}
