@@ -1,0 +1,116 @@
+
+  body {
+  background-image: url("santa.jpg"); 
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+  padding: 5%;
+  margin: 0px;
+	align-content: center; 
+ }
+ .madLibsEdit {
+   background-color: whitesmoke;
+   display: inline-block;
+   width: 100%;
+  margin: 40px 50px;
+  padding: 5%;
+  flex-direction: row;
+    text-align: center;
+   font-size:1em; 
+  justify-content: space-around;
+  flex-flow: wrap;
+  border: 5px solid #0000CD;
+  margin-bottom: 50px;
+  line-height: 200%;
+  opacity: 0.8;
+  
+  
+}
+ .madLibsPreview {
+   background-color: whitesmoke;
+   width: 100%;
+  margin: 40px 50px;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+  border: 5px solid #0000CD;
+  margin-bottom: 50px;
+   padding: 5%;
+    text-align: center;
+   font-size:1em; 
+    line-height: 200%;
+  opacity: 0.8;
+  
+}
+.democlass {
+  border-radius: 50px;
+-webkit-text-fill-color: #0000CD;
+font-size:1em; 
+width : 18%;
+text-align:center;
+height: 3%;
+}
+
+
+input:focus { 
+     background-color:#FF6347;
+      outline: none !important;
+    border-color: #719ECE;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+ 
+
+ .parag {
+ color: #FFA041;
+ background-color: none;
+ font-family: monospace;
+ font-size: 20px;
+
+    }
+
+  @media only screen and (max-width: 620px) {
+    body{
+      display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: stretch;
+    }
+    
+      @media only screen and (max-width: 801px) {
+    body{
+      display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: stretch;
+    }
+    
+      @media only screen and (max-width: 1000px) {
+    body{
+      display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: stretch;
+    }
+
+    .madLibsEdit {
+        width: 100%;
+        padding: 30px;
+        /* margin: 30px; */
+      }
+    .madLibsPreview {
+       padding: 30px;
+         width: 100%;
+      }
+    
+    }
+
