@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=KoHo:wght@500;700&display=swap");
+html,
+body {
+  font-family: "KoHo", sans-serif;
+  font-size: 15px;
+}
+
+#movie-backdrop {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.container {
+  padding-top: 32px;
+}
+
+#actors {
+  margin: 24px 16px 0 0;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,1);
+}
+.card {
+  margin: 10px  0px;
+  border: 1px solid rgba(227, 227, 227, 1);
+  border-radius: 9px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+  background-color: #fff;
+  color: #000;
+}
+.card.alpha {
+  background-color: rgba(224, 228, 233, 0.4);
+  border: none;
+}
+.card p {
+  margin: 8px 10px;
+  font-weight: bold;
+  text-align: center;
+}
+.container_foto {
+	overflow: hidden;
+  position: relative;
+}
+.hideDiv{
+  position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255 , 0);
+	transform: translate(0px, -100%);
+  transition: all 0.2s ease-in-out;
+}
+.container_foto:hover .hideDiv {
+	transform: translate(0px, 0px);
+	-webkit-transform: translate(0px, 0px);
+	-moz-transform: translate(0px, 0px);
+	-o-transform: translate(0px, 0px);
+	-ms-transform: translate(0px, 0px);
+  background-color: rgb(255, 255, 255 , 0.7);
+	
+}
+.actor {
+  max-width: 138px;
+  width: 100%;
+  cursor: pointer;
+  margin-right: 30px;
+}
+.pointer {
+  cursor: pointer;
+}
+.companyLogo {
+  margin: 5px;
+  border-radius: 8px 8px 0px 0px;
+  height: 100px;
+}
+.bg-dark {
+    background-color: transparent !important;
+    background-image: linear-gradient( to right, rgba(9.41%, 12.16%, 16.08%, 0.95) 150px, rgba(9.41%, 12.16%, 16.08%, 0.84) 100% );
+}
+.largeBg {
+  border-bottom: 1px solid #d8e5e5;
+  background-position: right top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  margin-top: -70px;
+  padding-top: 70px;
+}
+.layer {
+  background-image: linear-gradient(
+    to right,
+    rgba(9.41%, 12.16%, 16.08%, 0.95) 150px,
+    rgba(9.41%, 12.16%, 16.08%, 0.84) 100%
+  );
+  /*background-image: linear-gradient(to right, rgba(37, 5, 21, 0.95) 150px, rgba(8, 43, 58, 0.84) 100%);*/
+}
+.marginB {
+  margin-bottom: 30px;
+}
+.average {
+  font-size: 18px;
+}
+footer {
+  background-image: linear-gradient(
+    to right,
+    rgba(9.41%, 12.16%, 16.08%, 0.95) 150px,
+    rgba(9.41%, 12.16%, 16.08%, 0.84) 100%
+  );
+  text-align: center;
+  color: #f2f2f2;
+  height: 60px;
+  padding-top: 15px;
+  
+}
+footer a {
+  color: #28a745;
+}
+footer a:hover {
+  color: #228539;
+}
+.about{
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+.about h3 {
+    font-size: 4em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.about h4 {
+    font-size: 2em;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+.about p {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.2em;
+}
+.about div.wrapper {
+    margin: 0 auto;
+    width: 100%;
+}
+.about div.wrapper div {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+.about div.wrapper div>div {
+    color: #d40242;
+    font-weight: 700;
+    font-size: 4em;
+    line-height: 0.8em;
+    opacity: 0.7;
+    width: 8vw;
+}
+.about div.wrapper div p {
+    text-align: left;
+    margin: 0;
+    width: 92vw;
+}
