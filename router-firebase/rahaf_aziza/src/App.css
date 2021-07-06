@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=KoHo:wght@500;700&display=swap");
+html,
+body {
+  font-family: "KoHo", sans-serif;
+  font-size: 15px;
+}
+.card {
+  margin: 10px 0px;
+  border: 1px solid rgba(227, 227, 227, 1);
+  border-radius: 9px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+  background-color: #fff;
+  color: #000;
+  padding: 15px 10px;
+}
+.container {
+  margin-top: 30px;
+}
