@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: url(flamenco.jpg);
+    background-size: cover;
+    color: white;
+    height: 100vh;
+    font-family: Poppins, sans-serif;
+    font-size: 0.85rem;
+  }
+  
+    header h1 {
+    text-align: left;
+    padding: 4vh 0;
+    padding-left: 50px; 
+    }
+  
+  .wrapper {
+    height: 100vh;
+  }
+  
+  
+  .container { /*önemli*/
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+  }
+  
+  
+  
+  .madLibsEdit {
+    width: 45%;
+    margin-bottom: 10vh;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+  }
+  
+  .madLibsEdit input[type="text"] {
+    background-color: transparent;
+    border: none;
+    color: red;
+    text-align: left;
+    font-size: 1em;
+    width: 50px;
+    outline: none;
+  }
+  
+  .madLibsEdit input[type="text"]::placeholder {
+    color: red;
+    font-size: 12px;
+  }
+  
+  .madLibsPreview {
+    width: 45%;
+    padding-left: 50px;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .madLibsPreview input[type="text"] {
+    border: none;
+    background-color: transparent;
+    text-align: left;
+    font-size: 15px;
+    width: 50px;
+  }
+  
+  .madLibsPreview input[type="text"]::placeholder {
+    color: red;
+  }
+  
+  .madLibsPreview input[type="text"]:focus {
+    outline: none;
+    border: none;  /*değiştirebiliriz*/
+  }
+  
+  @media (min-width: 1450px) {
+    body {
+      font-size: 17.5px;
+    }
+  }
+  
+  
+  @media (max-width: 768px) {
+    body {
+      height: 100%;
+    }
+  
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
