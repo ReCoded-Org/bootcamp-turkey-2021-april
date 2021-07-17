@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=KoHo:wght@500;700&display=swap");
+html,
+body {
+  font-family: "KoHo", sans-serif;
+  font-size: 15px;
+}
+.shadowItem {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  margin-bottom: 20px;
+}
+.board {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  min-width: 350px !important;
+  max-width: 350px;
+  background-color: #ebecf0 !important;
+}
+.board .scroll {
+  max-height: calc(100vh - 230px);
+  overflow: scroll;
+  margin-bottom: 5px;
+}
