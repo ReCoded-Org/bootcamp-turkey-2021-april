@@ -1,0 +1,50 @@
+.navBar {
+  max-width: 92% !important;
+}
+
+.navBarLogo {
+  margin-left: 2% !important;
+}
+
+.loginPage {
+  align-items: center !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.loginImage {
+  max-width: 100%;
+}
+
+.container {
+  margin-top: 2% !important;
+  margin-bottom: 5% !important;
+}
+
+.gridSystem {
+  margin-bottom: 2%;
+}
+
+.card-body {
+  padding: 5% !important;
+}
+
+.addProjectPage {
+  margin-right: 3% !important;
+  margin-left: 3% !important;
+  margin-top: 2% !important;
+  margin-bottom: 5% !important;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.homeButtons {
+  font-size: 1.2rem !important;
+  border-radius: 25%;
+  height: 200px;
+  width: 200px;
+  text-align: center;
+  padding: 15px 32px;
+}
