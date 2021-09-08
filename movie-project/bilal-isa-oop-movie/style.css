@@ -1,0 +1,160 @@
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.75)), url('./img/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#container {
+  padding: 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.hidden {
+  display: none;
+}
+
+.shown {
+  display: block;
+}
+
+.navbar {
+  background: rgba(0, 0, 0, 0.75) !important;
+}
+
+.navbar-nav {
+  margin: 0 auto;
+}
+
+a, #search, p, span, h2, h3, h4, h5{
+  color: white !important;
+}
+
+.dropdown-menu {
+  background: rgba(0, 0, 0, 0.75) !important;
+  overflow-y:scroll;
+  max-height:150px;
+}
+
+.navbar-toggler-icon {
+  border-radius: 15%;
+  border: solid white;
+  background-color: white !important;
+}
+
+.aboutUs {
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  align-content: center; 
+  text-align: center;
+  border-radius: 5%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.producerImg {
+  width: 70px;
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.col, [class*="col-"] {
+  padding-right: 2%;
+  padding-left: 2%;
+  text-align: center;
+}
+
+.relatedMovie {
+  text-align: center;
+  font-weight: bolder;
+}
+
+.movieImg, .relatedImg, .actorPicture, .movie-prod-logo{
+  width: 100%;
+}
+
+.actorPageImage, .moviePageImage, #movie-backdrop, .searchImage {
+  width: 100%;
+  border-radius: 10%;
+}
+
+@media screen and (max-width: 450px){
+  .searchImage, .movieImg, .relatedImg, .actorPicture, .movie-prod-logo, .AllImages{
+    width: 85% !important;
+  }
+  .moviePageImage, .actorPageImage {
+    width: 58.5% !important;
+  }
+  #movie-backdrop {
+    width: 50% !important;
+  }
+  .producerImg {
+    width: 60px;
+  }
+}
+
+@media screen and (max-width: 991px){
+  .moviePageImage, .actorPageImage {
+    width: 74%;
+  }
+  .actorPicture {
+    width: 85% !important;
+  }
+  #movie-backdrop {
+    width: 70% !important;
+  }
+  #container {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+.AllImages, .img-thumbnail {
+  border: solid #28a745 4px !important;
+  border-radius: 10% !important;
+}
+
+#actorDiv, .movieDiv {
+  padding-bottom: 3%;
+}
+
+#movie-overview, #actorBiography {
+  text-align: left;
+}
+
+.dropdown-item:hover {
+  background-color: #28a745;
+  border-radius: 10px;
+}
+
+.hoverOverState {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 7%;
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.3));
+  border-radius: 10%;
+  width: 85%;
+  height: 85%;
+  font-weight: bolder;
+  font-style: italic;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.hoverOverState:hover {
+  opacity: 1;
+}

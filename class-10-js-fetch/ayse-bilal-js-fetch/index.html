@@ -1,0 +1,43 @@
+<html>
+<head>
+  <meta charset='UTF-8'/>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+  <meta http-equiv='X-UA-Compatible' content='ie=edge'/>
+  <title>Document</title>
+  <script src='index.js' defer></script>
+  <link rel='stylesheet' href='index.css'/>
+</head>
+<body>
+  <div id='main'>
+
+    <h2>GitHub Search</h2>
+
+    <form id='github-form'>
+      <input id='search' type='text' name='search'>
+      <div>
+        <div id="radio">
+          <label>Search by users
+            <input id="usersRadio" type='radio' name='choice'/>
+          </label>
+          <label>Search by repositories
+            <input id="reposRadio" type='radio' name='choice'/>
+          </label>
+        </div>
+      </div>
+      <input id="submit" type='submit' name='submit'/>
+    </form>
+
+    <div id='github-container'>
+      <ul id='user-list'>
+
+      </ul>
+
+      <ul id='repos-list'>
+
+      </ul>
+    </div>
+
+  </div>
+
+</body>
+</html>
