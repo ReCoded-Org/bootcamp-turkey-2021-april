@@ -1,0 +1,117 @@
+.madLibsEdit p,
+.madLibsPreview p {
+  display: inline-block;
+  padding: 2px;
+}
+
+
+.madLibsEdit{
+ flex: 1;
+ margin-right: 50px;
+ background-color: rgba(146, 177, 210, 0.9);
+ margin-left: 20px;
+ padding: 1em;
+}
+
+.madLibsPreview{
+ flex: 1;
+ background-color: rgba(146, 177, 210, 0.9);
+ margin-right: 20px;
+ padding: 1em;
+}
+
+
+html { 
+  background: url(https://www.geekgeneration.fr/wp-content/uploads/2019/11/Planet-Zoo-Keyart-4K.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+header {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+
+.texts {
+  margin-top: 10px;
+  display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: stretch;
+	align-content: flex-start;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  
+}
+
+input:focus {
+  background: yellow;
+}
+
+body h5 {
+  font-family: Marker Felt, fantasy;
+  font-size: 40px;
+  color: #deaf00;
+  float: right;
+  margin-right: 10px;
+  
+}
+
+.previewPos {
+  font-family: Marker Felt, fantasy;
+  font-size: 60px;
+  text-align: center;
+  color: #183933;
+
+}
+
+
+input {
+  border: 1px solid #38aef2;
+  border-radius: 4px;
+}
+
+
+/*smartphone*/
+@media only screen and (max-width: 400px) {
+.previewPos {
+  font-size: 40px; 
+}
+  .texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.madLibsPreview{
+margin: 20px;
+}
+.madLibsEdit{
+margin: 20px;
+}
+}
+/*End smartphone*/
+
+/*tablet*/
+@media only screen and (min-width: 400px) and (max-width: 800px) {
+  .texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.madLibsPreview{
+margin: 20px;
+}
+.madLibsEdit{
+margin: 20px;
+}
+
+}
